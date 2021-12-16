@@ -1,0 +1,205 @@
+introduction: |
+  My Name is Florian Kasper. I am a Cloud-Native Developer and Dev-Ops Engineer
+  from Nuremberg, Germany. Freelancing for over 10 years now, I’ve been actively
+  contributing to improve my clients position in their industries. With my
+  expertise not only in software development, but also in the technologies and
+  techniques at an infrastructure and architectural level, I can help to make
+  pragmatic decisions that will deliver measurable results. Software engineering
+  and architecting for me, started out as just a hobby, but quickly evolved into a
+  passion, that lasts until today. I constantly seek for new adventures and
+  challenges that will actually be of value for my customers.
+faq_sheet:
+  - title: Place of work
+    values: "Germany – Preferred: Southern Germany or Remote"
+  - title: Languages
+    values: English and German
+  - title: Availability
+    values: 04/01/2022 (full-time)
+  - title: Competencies and Skills
+    values:
+      - Development and design of scalable cloud-architectures and stacks using cloud-native technologies like Kubernetes, Helm, Terraform and Knative.
+      - Backend-Development using Go(lang), Node.JS, Ruby, PHP
+      - Frontend-Development with React.JS
+      - Asynchronous and distributed platforms Kafka, Redis und GRPC
+      - Setup and administration of local and cloud based environments using Kubernetes from scratch or Ansible; On Linux, Mac and Windows
+      - Collaborating on Software Architecture and Software Design for microservice platforms on Kubernetes, AWS and Google Cloud Platform.
+  - title: Industry Know-How
+    values: E-Commerce, Sports, Defense, IT, Marketing, Energy, Online
+  - title: Previous Responsibilities
+    values: Software Architect / Lead SRE / Dev-Ops
+  - title: Education
+    values:
+      - until 2011 Middle Grade from staatl. Realschule Höchstadt a.d. Aisch
+      - until 2014 Apprenticeship at Berufsschule Erlangen
+  - title: Certificates
+    values: Google Kubernetes Engine (by Google)
+
+knowledge_graph:
+  - title: "Compute"
+    values: "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), plus ofc. bare Linux / Windows / MacOS Hosts"
+  - title: "Observability"
+    values: "Prometheus (++), EFK-Stack (Elasticsearch, Fluentd, Kibana) (++), Datadog (++), Grafana (++)"
+  - title: "IaC - Infrastructure as Code"
+    values: "Cloudformation (+++), Terraform (+++), AWS CDK (+++), Azure ARM (++), Ansible (++), Puppet (++)"
+  - title: "Cloud Providers"
+    values: "Amazon Web Services (AWS) (+++), Google Cloud Platform (++), Microsoft Azure (++)"
+  - title: "Programming Languages"
+    values: "Go (+++), Python (+++), Typescript / Javascript + ESnext (+++), Ruby (++), PHP (++), Java (+), SQL (+)"
+  - title: "Databases"
+    values: "MySQL (++), PostgreSQL(++), Cassandra (+), Elasticsearch(++), Redis (++)"
+  - title: "OS"
+    values: "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
+  - title: "Protocols"
+    values: "HTTP (+++), Protobuf (+++), SMTP (++), GRPC (++), Kafka (+), WebRTC (+), XMPP(+), JSONschema (+)"
+  - title: "Methodologies"
+    values: "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
+  - title: "Frameworks, Testsuites"
+    values: "Go test (+++), Kubebuilder (+++), React.JS (+++), Node.JS (+++), Ruby on Rails (++), Mocha(++), Jest(+++), Prometheus(++)"
+
+permanent_positions:
+  - start: 09/2011
+    end: 12/2015
+    key_points:
+      - Completed apprenticeship as IT specialist - system integration
+      - "from 6/14: freelance part-time job"
+      - "from 03/15: full-time freelancer"
+links:
+  - link: https://github.com/nirnanaaa
+    title: GitHub
+history:
+  - client: IONOS SE
+    industry: Online
+    role: Platform Engineer
+    start: 12/2021
+    end: "03/2022"
+    tech: Kubernetes, Golang
+    key_points:
+      - Build and maintain a Kubernetes PaaS offering for > 10000 customers.
+  - client: Scout24 AG
+    industry: Online
+    role: Platform Engineer
+    start: 06/2019 - 11/2019, 07/2021
+    end: "12/2021"
+    tech: Kubernetes, AWS, Golang, CDK
+    key_points:
+      - Built a kubernetes custom resource and controller in go, which offers a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
+      - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
+      - During the process of carve-out, I participated in - 150 services (of the back then 600 services) were moved - without downtime - including relational databases, kubernetes controllers and resources.
+  - client: EnBW
+    industry: Utilities
+    role: Dev-Ops and SRE-Consultant
+    start: 01/2019 - 12/2019, 04/2021
+    end: "09/2021"
+    tech: Kubernetes, Harbor, Golang, AWS
+    key_points:
+      - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
+      - Built PXE profiles and go tooling for on premise nodes to automatically join clusters using bootstrap tokens and to regularly update their software and kubelet versions. By using chroots the controller sends updates and reboot commands to the underlying system.
+      - Design and develop a notification system for Container CVEs (automatic rebuilds of base images and notifications for users)
+  - client: AMAN Media GmbH
+    start: 08/2020
+    end: "09/2021"
+    industry: Online
+    role: AWS Architect / SRE
+    tech: AWS, Python, Lambda
+    key_points:
+      - Develop an architecture for scaling a PHP application
+      - Introduce Infrastructure-as-Code (IaC) to the Developers
+      - Build out automated deployment pipelines
+      - Introduce and establish Opsgenie for alert routing and triage
+  - client: Hill-Rom
+    role: SRE
+    industry: Healthcare
+    start: 07/2020
+    end: ""
+    tech: Azure, Kubernetes, Golang, React.JS, GitHub
+    key_points:
+      - Established reliable operation of 3 - AKS - kubernetes clusters in a development team of 400 developers, previously only accustomed to on premise deployments.
+      - Migrated 25 java-based apps to containers, automated github workflows and helm deployments for lifecycle management. This decreased the lead and deploy time for software changes from multiple hours to a maximum of 5 minutes.
+      - Migrated the company’s source code management system with 230 repositories from Bitbucket to GitHub enterprise. Strengthened security through the use of SAML, 2-factor authentication and SCIM based user provisioning.
+      - Created tools in go and typescript for engineering managers to self manage their team members and to enable role based access control for each of these applications within Azure AD.
+  - client: Juratherm GmbH
+    tech: Kubernetes, Ansible, CUPS, CentOS Linux, Rbackup, Slack, Ceph, CSI, Velero (ARK)
+    industry: Industrials
+    start: 05/2018
+    end: ""
+    role: System Architect and SRE
+    key_points:
+      - Infrastructure automation
+      - Concept and Realisation of the general infrastructure
+      - Design and integrate Backup and Desaster recovery plans
+  - client: AutoScout24 GmbH
+    start: 11/2019
+    end: 04/2020
+    key_points:
+      - Develop React.JS for an online car selling platform
+      - Support with organising and executing an organisational carve-out
+      - Develop multiple kubernetes controllers, platform infrastructure, disaster recovery and security policies from scratch
+    tech: AWS, Kubernetes, Golang, React.JS
+    industry: Online
+    role: Frontend Developer / Platform Engineer
+  - client: 100 days Software Projects GmbH
+    industry: Online
+    start: 01/2018
+    end: 06/2019
+    role: Software Developer and SRE
+    tech: React, Kubernetes, Golang, Codeship, Google Cloud Platform, Kafka, Node.JS, Jira, Linux, Nginx, MySQL, PostgreSQL
+    key_points:
+      - Develop an office solution for SMB
+      - Develop and design an E-commerce app from scratch
+      - Concept, Architectural-Design and development of a password manager
+      - Concept and Realisation of a Hosting and CI infrastructure
+      - Concept, Development of a Google-Drive like storage solution
+      - Concept, Development of a thumbnail generator
+  - client: seven point.media GmbH & Co. KG
+    industry: Health
+    start: 03/2016
+    end: 12/2019
+    role: Software Developer and SRE
+    tech: React, PHP, Kubernetes, GitHub
+    key_points:
+      - Build a cash registry and client management system for fitness centers in React.JS, which is used by 600 clients in 10 countries.
+      - Build and maintain a platform product on AWS/EKS for enabling developers easy build and deploy to their PHP app in < 5min.
+  - client: ERAMON GmbH
+    industry: Industry Supply
+    role: Consultant and React Coach
+    start: 03/2016
+    end: 06/2016
+    tech: React, Webpack, Node.JS, Sass
+    key_points:
+      - Coach developers on React
+      - Integrating React into the company's legacy software platform
+  - client: VATC Technologies Inc.
+    industry: Defense
+    start: 03/2015
+    end: 06/2016
+    role: Software Architect and Developer
+    key_points:
+      - Design and architecture of a platform for secure storage and analysis of biometric data sets
+      - Design and architecture of a platform for automated aggregation and evaluation of activities in social networks
+    tech: React, Node.JS, Apache, Ruby on Rails, PHP, Docker, Linux, AWS, Elasticsearch, Cassandra, ArcGIS
+  - client: Corscience GmbH & Co. KG
+    industry: Healthcare
+    start: 01/2015
+    role: SRE
+    end: 12/2016
+    tech: Debian Linux, Ansible, Docker, VMware, Ruby on Rails, React
+    key_points:
+      - Care, maintenance and servicing of the company's internal server landscape
+      - Design and development of in-house software applications
+      - Consolidate 20 in-house web services into a docker
+  - client: XPANDMMI
+    industry: Online
+    start: 01/2015
+    role: Software Developer
+    end: 03/2015
+    key_points:
+      - Development of various platform modules for a CMS system
+    tech: PHP, Apache, MySQL, Ruby on Rails
+  - client: Jacor Online Marketing
+    industry: Online
+    role: Software Developer
+    start: 06/2014
+    end: 12/2014
+    tech: PHP, React
+    key_points:
+      - Development of an application to evaluate images and rate them
