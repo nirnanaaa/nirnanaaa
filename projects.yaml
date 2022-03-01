@@ -1,6 +1,6 @@
 introduction: |
   My Name is Florian Kasper. I am a Cloud-Native Developer and Dev-Ops Engineer
-  from Nuremberg, Germany. Freelancing for over 10 years now, I’ve been actively
+  from Nuremberg, Germany. Freelancing for over 12 years now, I’ve been actively
   contributing to improve my clients position in their industries. With my
   expertise not only in software development, but also in the technologies and
   techniques at an infrastructure and architectural level, I can help to make
@@ -14,7 +14,7 @@ faq_sheet:
   - title: Languages
     values: English and German
   - title: Availability
-    values: 04/01/2022 (full-time)
+    values: 07/01/2022 (full-time)
   - title: Competencies and Skills
     values:
       - Development and design of scalable cloud-architectures and stacks using cloud-native technologies like Kubernetes, Helm, Terraform and Knative.
@@ -31,8 +31,10 @@ faq_sheet:
     values:
       - until 2011 Middle Grade from staatl. Realschule Höchstadt a.d. Aisch
       - until 2014 Apprenticeship at Berufsschule Erlangen
-  - title: Certificates
-    values: Google Kubernetes Engine (by Google)
+  - title: Certifications
+    values:
+      - AWS Certified Solutions Architect - Associate (SAA)
+      - AWS Certified Solutions Architect - Professional (SAP)
 
 knowledge_graph:
   - title: "Compute"
@@ -79,7 +81,7 @@ history:
     industry: Online
     role: Platform Engineer
     start: 06/2019 - 11/2019, 07/2021
-    end: "12/2021"
+    end: "04/2022"
     tech: Kubernetes, AWS, Golang, CDK
     key_points:
       - Built a kubernetes custom resource and controller in go, which offers a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
