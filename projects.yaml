@@ -34,7 +34,6 @@ faq_sheet:
   - title: Certifications
     values:
       - AWS Certified Solutions Architect - Associate (SAA)
-      - AWS Certified Solutions Architect - Professional (SAP)
 
 knowledge_graph:
   - title: "Compute"
