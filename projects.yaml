@@ -7,11 +7,11 @@ introduction: |
   routine tasks.
 faq_sheet:
   - title: Place of work
-    values: "Germany – Preferred: Southern Germany or Remote"
+    values: "Germany – Preferred: Southern Germany, Austria or Remote"
   - title: Languages
     values: English and German
   - title: Availability
-    values: 08/01/2022 (full-time)
+    values: 11/01/2022 (full-time)
   - title: Competencies and Skills
     values:
       - Development and design of scalable cloud-architectures and stacks using cloud-native technologies like Kubernetes, Helm, Terraform and Knative.
@@ -65,6 +65,24 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
+  # - client: To be announced
+  #   industry: Industrials
+  #   role: Site Reliability Engineer
+  #   start: 08/2022
+  #   end: ""
+  #   tech: Kubernetes, Golang, Rancher
+  #   key_points:
+  #   - ""
+  - client: Scout24 AG
+    industry: Online
+    role: Platform Engineer
+    start: 06/2019 - 11/2019, 07/2021
+    end: "08/2022"
+    tech: Kubernetes, AWS, Golang, CDK
+    key_points:
+      - Built a kubernetes custom resource and controller in go, which offers a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
+      - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
+      - During the process of carve-out, I participated in - 150 services (of the back then 600 services) were moved - without downtime - including relational databases, kubernetes controllers and resources.
   - client: IONOS SE
     industry: Online
     role: Platform Engineer
@@ -73,16 +91,6 @@ history:
     tech: Kubernetes, Golang
     key_points:
       - Build and maintain a Kubernetes PaaS offering for > 10000 customers.
-  - client: Scout24 AG
-    industry: Online
-    role: Platform Engineer
-    start: 06/2019 - 11/2019, 07/2021
-    end: "04/2022"
-    tech: Kubernetes, AWS, Golang, CDK
-    key_points:
-      - Built a kubernetes custom resource and controller in go, which offers a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
-      - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
-      - During the process of carve-out, I participated in - 150 services (of the back then 600 services) were moved - without downtime - including relational databases, kubernetes controllers and resources.
   - client: EnBW
     industry: Utilities
     role: Dev-Ops and SRE-Consultant
