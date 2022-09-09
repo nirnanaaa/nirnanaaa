@@ -65,14 +65,15 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
-  # - client: To be announced
-  #   industry: Industrials
-  #   role: Site Reliability Engineer
-  #   start: 08/2022
-  #   end: ""
-  #   tech: Kubernetes, Golang, Rancher
-  #   key_points:
-  #   - ""
+  - client: ADB Safegate
+    industry: Manufacturing
+    role: Site Reliability Engineer
+    start: 08/2022
+    end: "11/2022"
+    tech: Kubernetes, Golang, Rancher, On-Premise
+    key_points:
+    - "Designed and enhanced a standardized deployment pipeline for quickly deploying kubernetes clusters with a standardized setup across different environments, platforms and infrastructure"
+    - "Support and guide the in-house development team with kubernetes training and scalable and fault-tolerant architecture patterns"
   - client: Scout24 AG
     industry: Online
     role: Platform Engineer
