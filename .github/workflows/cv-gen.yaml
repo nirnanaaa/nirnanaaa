@@ -21,7 +21,7 @@ jobs:
     - run: target/release/nirnanaaa
     - id: commit_files
       name: Commit files  
-      run:
+      run: |
         git config --local user.name actions-user
         git config --local user.email "actions@github.com"
         git add CV.pdf
