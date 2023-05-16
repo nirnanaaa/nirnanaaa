@@ -8,7 +8,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/fkconsultin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="fkconsultin" height="30" width="40" /></a>
-<a href="/https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/119789-profil-florian-kasper-software-development-professional-with-expertise-in-site-reliability-engineering.html" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/119789-profil-florian-kasper-software-development-professional-with-expertise-in-site-reliability-engineering.html" height="30" width="40" /></a>
+<a href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/119789-profil-florian-kasper-software-development-professional-with-expertise-in-site-reliability-engineering.html" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Logo_freelancermap.png/1600px-Logo_freelancermap.png" alt="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/119789-profil-florian-kasper-software-development-professional-with-expertise-in-site-reliability-engineering.html" height="30" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
