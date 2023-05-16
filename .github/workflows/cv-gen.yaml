@@ -1,5 +1,5 @@
 
-name: GitHub Actions Build
+name: Run CV Gen
 on:
   push:
     branches:
@@ -9,12 +9,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
+      uses: actions/checkout@v3
+    - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+    - uses: actions-rs/cargo@v1
       with:
-        python-version: '3.9' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - name: Install dependecies
-      uses: VaultVulp/action-pipenv@v2.0.1
-      with:
-        command: install -d # Install all dependencies, including development ones
+        command: build
+        args: --release --all-features
+    - run: target/release/nirnanaaa
+    - id: commit_files
+      name: Commit files  
+      run:
+        git config --local user.name actions-user
+        git config --local user.email "actions@github.com"
+        if ! git diff --exit-code; then
+            git add CV.pdf
+            git commit -am "Updated CV at $(date) [skip ci]"
+            git push -f origin main
+        fi

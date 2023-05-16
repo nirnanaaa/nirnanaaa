@@ -1,17 +1,20 @@
 introduction: |
-  Innovative Cloud-Native Developer and DevOps Engineer with extensive experience working in the design and implementation of complex IT systems. 
-  Possess in-depth understanding of various system architecture and software delivery processes. Excellent project manager well-versed in engaging 
-  with strategic customers to accelerate the delivery of mission-critical projects, as well as recommend best-practice architectures in accordance 
-  with their long-term business objectives. Effective communicator adept at cultivating technical relationships with customers, and functioning 
-  as their trusted advisor. Proven ability to apply a systematic problem-solving approach in addressing bugs, optimizing code, and automating 
+  Innovative Cloud-Native Developer and DevOps Engineer with extensive experience working in the design and implementation of complex IT systems.
+  Possess in-depth understanding of various system architecture and software delivery processes. Excellent project manager well-versed in engaging
+  with strategic customers to accelerate the delivery of mission-critical projects, as well as recommend best-practice architectures in accordance
+  with their long-term business objectives. Effective communicator adept at cultivating technical relationships with customers, and functioning
+  as their trusted advisor. Proven ability to apply a systematic problem-solving approach in addressing bugs, optimizing code, and automating
   routine tasks.
 faq_sheet:
   - title: Place of work
-    values: "Germany – Preferred: Southern Germany, Austria or Remote"
+    values:
+    - "Germany – Preferred: Southern Germany, Austria or Remote"
   - title: Languages
-    values: English and German
+    values:
+    - English and German
   - title: Availability
-    values: 11/01/2022 (full-time)
+    values:
+    - "5/15/2023"
   - title: Competencies and Skills
     values:
       - Development and design of scalable cloud-architectures and stacks using cloud-native technologies like Kubernetes, Helm, Terraform and Knative.
@@ -21,9 +24,11 @@ faq_sheet:
       - Setup and administration of local and cloud based environments using Kubernetes from scratch or Ansible; On Linux, Mac and Windows
       - Collaborating on Software Architecture and Software Design for microservice platforms on Kubernetes, AWS and Google Cloud Platform.
   - title: Industry Know-How
-    values: E-Commerce, Sports, Defense, IT, Marketing, Energy, Online
+    values:
+      - E-Commerce, Sports, Defense, IT, Marketing, Energy, Online
   - title: Previous Responsibilities
-    values: Software Architect / Lead SRE / Dev-Ops
+    values:
+      - Software Architect / Lead SRE / Dev-Ops
   - title: Education
     values:
       - until 2011 Middle Grade from staatl. Realschule Höchstadt a.d. Aisch
@@ -34,25 +39,35 @@ faq_sheet:
 
 knowledge_graph:
   - title: "Compute"
-    values: "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), plus ofc. bare Linux / Windows / MacOS Hosts"
+    values:
+    - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), plus ofc. bare Linux / Windows / MacOS Hosts"
   - title: "Observability"
-    values: "Prometheus (++), EFK-Stack (Elasticsearch, Fluentd, Kibana) (++), Datadog (++), Grafana (++)"
+    values:
+    - "Prometheus (++), EFK-Stack (Elasticsearch, Fluentd, Kibana) (++), Datadog (++), Grafana (++)"
   - title: "IaC - Infrastructure as Code"
-    values: "Cloudformation (+++), Terraform (+++), AWS CDK (+++), Azure ARM (++), Ansible (++), Puppet (++)"
+    values:
+    - "Cloudformation (+++), Terraform (+++), AWS CDK (+++), Azure ARM (++), Ansible (++), Puppet (++)"
   - title: "Cloud Providers"
-    values: "Amazon Web Services (AWS) (+++), Google Cloud Platform (++), Microsoft Azure (++)"
+    values:
+    - "Amazon Web Services (AWS) (+++), Google Cloud Platform (++), Microsoft Azure (++)"
   - title: "Programming Languages"
-    values: "Go (+++), Python (+++), Typescript / Javascript + ESnext (+++), Ruby (++), PHP (++), Java (+), SQL (+)"
+    values:
+    - "Go (+++), Python (+++), Typescript / Javascript + ESnext (+++), Ruby (++), PHP (++), Java (+), SQL (+)"
   - title: "Databases"
-    values: "MySQL (++), PostgreSQL(++), Cassandra (+), Elasticsearch(++), Redis (++)"
+    values:
+    - "MySQL (++), PostgreSQL(++), Cassandra (+), Elasticsearch(++), Redis (++)"
   - title: "OS"
-    values: "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
+    values:
+    - "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
   - title: "Protocols"
-    values: "HTTP (+++), Protobuf (+++), SMTP (++), GRPC (++), Kafka (+), WebRTC (+), XMPP(+), JSONschema (+)"
+    values:
+    - "HTTP (+++), Protobuf (+++), SMTP (++), GRPC (++), Kafka (+), WebRTC (+), XMPP(+), JSONschema (+)"
   - title: "Methodologies"
-    values: "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
+    values:
+    - "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
   - title: "Frameworks, Testsuites"
-    values: "Go test (+++), Kubebuilder (+++), React.JS (+++), Node.JS (+++), Ruby on Rails (++), Mocha(++), Jest(+++), Prometheus(++)"
+    values:
+    - "Go test (+++), Kubebuilder (+++), React.JS (+++), Node.JS (+++), Ruby on Rails (++), Mocha(++), Jest(+++), Prometheus(++)"
 
 permanent_positions:
   - start: 09/2011
@@ -65,11 +80,22 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
+  - client: EnBW
+    industry: Utilities
+    role: Dev-Ops and SRE-Consultant
+    start: 01/2019 - 12/2019, 04/2021 - 09/2021, 10/2022
+    end: "05/2023"
+    tech: Kubernetes, Harbor, Golang, AWS
+    key_points:
+      - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
+      - Built PXE profiles and go tooling for on premise nodes to automatically join clusters using bootstrap tokens and to regularly update their software and kubelet versions. By using chroots the controller sends updates and reboot commands to the underlying system.
+      - Design and develop a notification system for Container CVEs (automatic rebuilds of base images and notifications for users)
+      - Design and configure runtime security software for attack detection during the runtime of a linux process.
   - client: ADB Safegate
     industry: Manufacturing
     role: Site Reliability Engineer
     start: 08/2022
-    end: "11/2022"
+    end: "01/2023"
     tech: Kubernetes, Golang, Rancher, On-Premise
     key_points:
     - "Designed and enhanced a standardized deployment pipeline for quickly deploying kubernetes clusters with a standardized setup across different environments, platforms and infrastructure"
@@ -92,16 +118,6 @@ history:
     tech: Kubernetes, Golang
     key_points:
       - Build and maintain a Kubernetes PaaS offering for > 10000 customers.
-  - client: EnBW
-    industry: Utilities
-    role: Dev-Ops and SRE-Consultant
-    start: 01/2019 - 12/2019, 04/2021
-    end: "09/2021"
-    tech: Kubernetes, Harbor, Golang, AWS
-    key_points:
-      - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
-      - Built PXE profiles and go tooling for on premise nodes to automatically join clusters using bootstrap tokens and to regularly update their software and kubelet versions. By using chroots the controller sends updates and reboot commands to the underlying system.
-      - Design and develop a notification system for Container CVEs (automatic rebuilds of base images and notifications for users)
   - client: AMAN Media GmbH
     start: 08/2020
     end: "09/2021"

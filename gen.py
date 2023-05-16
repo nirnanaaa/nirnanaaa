@@ -473,4 +473,5 @@ with open('projects.yaml') as f:
 
     fname = f'Florian-Kasper-{date}.docx'
     document.save(fname)
+    os.environ['UNO_PATH'] = "/Applications/LibreOffice.app/Contents"
     os.system(f"/opt/homebrew/bin/python3 /opt/homebrew/bin/unoconv -fpdf {fname}")

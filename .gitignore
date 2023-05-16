@@ -1,2 +1,8 @@
 *:Zone.Identifier
 Florian-Kasper-*
+
+# Added by cargo
+
+/target
+.vscode/
+.DS_Store
