@@ -14,7 +14,7 @@ faq_sheet:
     - English and German
   - title: Availability
     values:
-    - "5/15/2023"
+    - "7/28/2023"
   - title: Competencies and Skills
     values:
       - Development and design of scalable cloud-architectures and stacks using cloud-native technologies like Kubernetes, Helm, Terraform and Knative.
@@ -80,7 +80,7 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
-  - client: EnBW
+  - client: EnBW AG
     industry: Utilities
     role: Dev-Ops and SRE-Consultant
     start: multiple, latest 10/2022
