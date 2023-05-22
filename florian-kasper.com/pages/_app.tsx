@@ -10,6 +10,7 @@ export const robotoMono = Roboto_Mono({ subsets: ['latin'] })
 import './globals.css'
 import 'focus-visible'
 import { Container } from '@/components/Container'
+import { NextPage, NextPageContext } from 'next'
 
 function usePrevious(value) {
   let ref = useRef()
