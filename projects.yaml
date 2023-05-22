@@ -83,8 +83,8 @@ history:
   - client: EnBW
     industry: Utilities
     role: Dev-Ops and SRE-Consultant
-    start: 01/2019 - 12/2019, 04/2021 - 09/2021, 10/2022
-    end: "05/2023"
+    start: multiple, latest 10/2022
+    end: ""
     tech: Kubernetes, Harbor, Golang, AWS
     key_points:
       - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
