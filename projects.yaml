@@ -87,9 +87,9 @@ history:
     end: ""
     tech: Kubernetes, Harbor, Golang, AWS
     key_points:
+      - Design and develop system to automatically update all linux servers in the companies backend networks in regular intervals.
+      - Develop a headless (automated) command execution engine, which can run commands on remote servers securely.
       - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
-      - Built PXE profiles and go tooling for on premise nodes to automatically join clusters using bootstrap tokens and to regularly update their software and kubelet versions. By using chroots the controller sends updates and reboot commands to the underlying system.
-      - Design and develop a notification system for Container CVEs (automatic rebuilds of base images and notifications for users)
       - Design and configure runtime security software for attack detection during the runtime of a linux process.
   - client: ADB Safegate
     industry: Manufacturing
