@@ -17,18 +17,18 @@ faq_sheet:
     - "7/28/2023"
   - title: Competencies and Skills
     values:
-      - Development and design of scalable cloud-architectures and stacks using cloud-native technologies like Kubernetes, Helm, Terraform and Knative.
+      - Development and design of scalable architectures and stacks using bleeding edge as well as well established tools and languages like Go, Kubernetes, Helm and Terraform
       - Backend-Development using Go(lang), Node.JS, Ruby, PHP
       - Frontend-Development with React.JS
       - Asynchronous and distributed platforms Kafka, Redis und GRPC
-      - Setup and administration of local and cloud based environments using Kubernetes from scratch or Ansible; On Linux, Mac and Windows
-      - Collaborating on Software Architecture and Software Design for microservice platforms on Kubernetes, AWS and Google Cloud Platform.
+      - Setup and administration of on-premise and cloud based environments using Infrastructure-as-Code (IaC) or automation tooling like Saltstack, Ansible, Puppet or Chef
+      - Collaborate on Design and Development of Architecture and Design of microservice platforms on Bare-Metal, Kubernetes, AWS and Google Cloud Platform
   - title: Industry Know-How
     values:
-      - E-Commerce, Sports, Defense, IT, Marketing, Energy, Online
+      - Tech, Utilities, Sports, Industrials, Defense, Marketing
   - title: Previous Responsibilities
     values:
-      - Software Architect / Lead SRE / Dev-Ops
+      - Software Architect / Site Reliability Engineering (SRE) / Dev-Ops / Platform Engineering
   - title: Education
     values:
       - until 2011 Middle Grade from staatl. Realschule Höchstadt a.d. Aisch
@@ -40,7 +40,7 @@ faq_sheet:
 knowledge_graph:
   - title: "Compute"
     values:
-    - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), plus ofc. bare Linux / Windows / MacOS Hosts"
+    - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), Linux / Windows / MacOS administration in on-premise environments"
   - title: "Observability"
     values:
     - "Prometheus (++), EFK-Stack (Elasticsearch, Fluentd, Kibana) (++), Datadog (++), Grafana (++)"
@@ -52,7 +52,7 @@ knowledge_graph:
     - "Amazon Web Services (AWS) (+++), Google Cloud Platform (++), Microsoft Azure (++)"
   - title: "Programming Languages"
     values:
-    - "Go (+++), Python (+++), Typescript / Javascript + ESnext (+++), Ruby (++), PHP (++), Java (+), SQL (+)"
+    - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (++), PHP (++), Java (+), SQL (+)"
   - title: "Databases"
     values:
     - "MySQL (++), PostgreSQL(++), Cassandra (+), Elasticsearch(++), Redis (++)"
@@ -61,13 +61,13 @@ knowledge_graph:
     - "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
   - title: "Protocols"
     values:
-    - "HTTP (+++), Protobuf (+++), SMTP (++), GRPC (++), Kafka (+), WebRTC (+), XMPP(+), JSONschema (+)"
+    - "GRPC (+++), Oauth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf (+++), SMTP (++), Kafka (+), WebRTC (+), XMPP(+)"
   - title: "Methodologies"
     values:
     - "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
   - title: "Frameworks, Testsuites"
     values:
-    - "Go test (+++), Kubebuilder (+++), React.JS (+++), Node.JS (+++), Ruby on Rails (++), Mocha(++), Jest(+++), Prometheus(++)"
+    - "Go test (+++), Kubebuilder (+++), React.JS (+++), Node.JS (+++), Ruby on Rails (++), Mocha(++), Jest(+++), ZeroMQ (++)"
 
 permanent_positions:
   - start: 09/2011
@@ -86,19 +86,27 @@ history:
     start: multiple, latest 10/2022
     end: ""
     tech: Kubernetes, Harbor, Golang, AWS
+    clientLink: enbw.com
+    clientLogo: /clients/enbw.png
+    shortSummary: Infrastructure and OS patch automation tooling
+    invertedSortingWeight: 1
     key_points:
-      - Design and develop system to automatically update all linux servers in the companies backend networks in regular intervals.
-      - Develop a headless (automated) command execution engine, which can run commands on remote servers securely.
+      - Design and develop a distributed, grpc based system in go to automatically update all linux servers in the companies backend networks in regular intervals.
+      - Develop a headless (automated) saltstack-based command execution engine in go, which can run commands on remote servers securely.
       - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
-      - Design and configure runtime security software for attack detection during the runtime of a linux process.
+      - Design and configure runtime security software for intrusion- and attack vector detection during the runtime of a linux process within kubernetes.
   - client: ADB Safegate
     industry: Manufacturing
     role: Site Reliability Engineer
     start: 08/2022
     end: "01/2023"
     tech: Kubernetes, Golang, Rancher, On-Premise
+    invertedSortingWeight: 9
+    clientLink: adbsafegate.com
+    clientLogo: /clients/adbsg.png
+    shortSummary: End-User deployment processes
     key_points:
-    - "Designed and enhanced a standardized deployment pipeline for quickly deploying kubernetes clusters with a standardized setup across different environments, platforms and infrastructure"
+    - "Designed and enhanced a standardized helmfile-based deployment pipeline for quickly deploying kubernetes clusters with a standardized setup across different environments, platforms and infrastructure"
     - "Support and guide the in-house development team with kubernetes training and scalable and fault-tolerant architecture patterns"
   - client: Scout24 AG
     industry: Online
@@ -106,35 +114,48 @@ history:
     start: 06/2019 - 11/2019, 07/2021
     end: "08/2022"
     tech: Kubernetes, AWS, Golang, CDK
+    clientLink: immobilienscout24.de
+    clientLogo: /clients/is24.webp
+    shortSummary: Company-wide hosting platform for microservices
+    invertedSortingWeight: 2
     key_points:
-      - Built a kubernetes custom resource and controller in go, which offers a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
+      - Built kubernetes custom resources and controllers in go, which offer a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints for internal developers. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
       - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
-      - During the process of carve-out, I participated in - 150 services (of the back then 600 services) were moved - without downtime - including relational databases, kubernetes controllers and resources.
+      - During the process of an organizational carve-out, that I participated in - 150 services (of the back then 600 services) were moved - without downtime - into new organizational structures. Services were including relational databases, AWS account resources, kubernetes controllers and service deployment resources.
   - client: IONOS SE
     industry: Online
     role: Platform Engineer
     start: 12/2021
     end: "03/2022"
     tech: Kubernetes, Golang
+    clientLink: ionos.de
+    clientLogo: /clients/ionos.png
+    shortSummary: Kubernetes Cloud Offering
     key_points:
-      - Build and maintain a Kubernetes PaaS offering for > 10000 customers.
+      - Help to build and maintain a Kubernetes PaaS offering for > 10000 customers. Tooling is fully written in go and automatically tested using CI and build pipelines
   - client: AMAN Media GmbH
     start: 08/2020
     end: "09/2021"
     industry: Online
     role: AWS Architect / SRE
     tech: AWS, Python, Lambda
+    clientLink: aman.de
+    clientLogo: /clients/aman.png
+    shortSummary: Cloud Architecture and implementation of scalable webshops
     key_points:
-      - Develop an architecture for scaling a PHP application
-      - Introduce Infrastructure-as-Code (IaC) to the Developers
-      - Build out automated deployment pipelines
-      - Introduce and establish Opsgenie for alert routing and triage
-  - client: Hill-Rom
+      - Develop an architecture for scaling a PHP web application and asynchronous backend tasks
+      - Introduce Infrastructure-as-Code (IaC) to the developers and build automated CI deployment pipelines and infrastructure in Jenkins
+      - Introduce and establish Opsgenie for alert routing and triage and connect it to the production environment
+  - client: Baxter International
     role: SRE
     industry: Healthcare
     start: 07/2020
     end: ""
     tech: Azure, Kubernetes, Golang, React.JS, GitHub
+    invertedSortingWeight: 4
+    clientLink: baxter.com
+    clientLogo: /clients/baxter.png
+    shortSummary: Role Based Access Control Policies and Automation
     key_points:
       - Established reliable operation of 3 - AKS - kubernetes clusters in a development team of 400 developers, previously only accustomed to on premise deployments.
       - Migrated 25 java-based apps to containers, automated github workflows and helm deployments for lifecycle management. This decreased the lead and deploy time for software changes from multiple hours to a maximum of 5 minutes.
@@ -146,17 +167,22 @@ history:
     start: 05/2018
     end: ""
     role: System Architect and SRE
+    invertedSortingWeight: 3
+    clientLink: juratherm.com
+    clientLogo: /clients/Logo_Juratherm.svg
+    shortSummary: IoT Devices and Manufacturing Automation
     key_points:
-      - Infrastructure automation
-      - Concept and Realisation of the general infrastructure
+      - Concept and implementation of the companies runtime infrastructure, account and runtime security on AWS
       - Design and integrate Backup and Desaster recovery plans
+      - Design and Develop microservice authentication patterns using OAuth/OpenID Connect and SAML
   - client: AutoScout24 GmbH
     start: 11/2019
     end: 04/2020
+    clientLink: autoscout24.de
+    clientLogo: /clients/as24.jpg
+    shortSummary: Offer management for car dealerships
     key_points:
-      - Develop React.JS for an online car selling platform
-      - Support with organising and executing an organisational carve-out
-      - Develop multiple kubernetes controllers, platform infrastructure, disaster recovery and security policies from scratch
+      - Develop a React.JS based frontend using Typescript for an online car selling platform, where car dealers can view and manage their active listings and see their performance numbers
     tech: AWS, Kubernetes, Golang, React.JS
     industry: Online
     role: Frontend Developer / Platform Engineer
@@ -166,28 +192,35 @@ history:
     end: 06/2019
     role: Software Developer and SRE
     tech: React, Kubernetes, Golang, Codeship, Google Cloud Platform, Kafka, Node.JS, Jira, Linux, Nginx, MySQL, PostgreSQL
+    invertedSortingWeight: 5
+    clientLink: www.100days.de
+    clientLogo: /clients/logo_kleinesR.svg
+    shortSummary: Cloud Collaboration and Password Manager
     key_points:
-      - Develop an office solution for SMB
-      - Develop and design an E-commerce app from scratch
-      - Concept, Architectural-Design and development of a password manager
-      - Concept and Realisation of a Hosting and CI infrastructure
-      - Concept, Development of a Google-Drive like storage solution
-      - Concept, Development of a thumbnail generator
+      - Develop an office-suite-like (Excel, Word) solution frontend for small-to-medium-sized businesses using React.JS and Typescript
+      - Concept and Development of a Google-Drive like storage service. Frontend is written in React.JS, backend in Go
+      - Concept, Development of a thumbnail generator in go. Storage is based on AWS S3. Multiple, asynchronous processing pipelines and fan-out worker patterns
+      - Concept and Architectural-Design as well as Development of a web-based password manager
+      - Concept and Realisation of a Hosting and CI infrastructure on-premise using kubernetes. Automation using ansible
   - client: seven point.media GmbH & Co. KG
     industry: Health
     start: 03/2016
     end: 12/2019
     role: Software Developer and SRE
     tech: React, PHP, Kubernetes, GitHub
+    clientLink: www.7pointmedia.com
+    clientLogo: /clients/sevenpoint.png
+    shortSummary: Membership and Device Management for EMS-based training
     key_points:
-      - Build a cash registry and client management system for fitness centers in React.JS, which is used by 600 clients in 10 countries.
-      - Build and maintain a platform product on AWS/EKS for enabling developers easy build and deploy to their PHP app in < 5min.
+      - Aid in the development of fitness center management software, which is used by 600 clients in 10 countries. Development of the backend happened in PHP, whilst the frontend was React.JS based
+      - Build and maintain a platform product on AWS/EKS for enabling developers easy build and deploy to their PHP app in < 5min
   - client: ERAMON GmbH
     industry: Industry Supply
     role: Consultant and React Coach
     start: 03/2016
     end: 06/2016
     tech: React, Webpack, Node.JS, Sass
+    invertedSortingWeight: -1
     key_points:
       - Coach developers on React
       - Integrating React into the company's legacy software platform
@@ -196,9 +229,12 @@ history:
     start: 03/2015
     end: 06/2016
     role: Software Architect and Developer
+    clientLink: vatcinc.com
+    clientLogo: /clients/vatc.jpeg
+    shortSummary: Modern-Age Exercise Planning and Monitoring
     key_points:
-      - Design and architecture of a platform for secure storage and analysis of biometric data sets
-      - Design and architecture of a platform for automated aggregation and evaluation of activities in social networks
+      - Design and architecture of a platform for secure storage and analysis of biometric data sets (fingerprints, iris, PII) using Ruby on Rails in the backend and React.JS in the frontend, hosted on AWS
+      - Design and architecture of a platform for automated aggregation and evaluation of activities in social networks. This process made use a mixed set of web scrapers, twitter firehose and other publicly available data, written in Ruby, which pumped their data into kafka and further into cassandra, where they could be adjusted by an exercise operator to include relevant information for an analyst to identify.
     tech: React, Node.JS, Apache, Ruby on Rails, PHP, Docker, Linux, AWS, Elasticsearch, Cassandra, ArcGIS
   - client: Corscience GmbH & Co. KG
     industry: Healthcare
@@ -206,15 +242,17 @@ history:
     role: SRE
     end: 12/2016
     tech: Debian Linux, Ansible, Docker, VMware, Ruby on Rails, React
+    invertedSortingWeight: -1
     key_points:
-      - Care, maintenance and servicing of the company's internal server landscape
-      - Design and development of in-house software applications
-      - Consolidate 20 in-house web services into a docker
+      - Care, maintenance and servicing of the company's internal debian based server landscape. Automation was done using Puppet and Ansible
+      - Design and development of in-house software applications using mostly Ruby on Rails and Docker
+      - Consolidate 20 in-house web services into a docker based hosting platform to reduce total overhead on hosting and infrastructure maintenance
   - client: XPANDMMI
     industry: Online
     start: 01/2015
     role: Software Developer
     end: 03/2015
+    invertedSortingWeight: -1
     key_points:
       - Development of various platform modules for a CMS system
     tech: PHP, Apache, MySQL, Ruby on Rails
@@ -224,5 +262,6 @@ history:
     start: 06/2014
     end: 12/2014
     tech: PHP, React
+    invertedSortingWeight: -1
     key_points:
       - Development of an application to evaluate images and rate them
