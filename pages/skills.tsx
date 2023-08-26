@@ -25,18 +25,18 @@ function Tool({ title, href, children }) {
   )
 }
 
-export default function Uses() {
+export default function Skills() {
   return (
     <>
       <Head>
-        <title>Uses - Florian Kasper - Architect - Infrastructure - SRE</title>
+        <title>Skills - Florian Kasper - Architect - Infrastructure - SRE</title>
         <meta
           name="description"
           content="My approach to doing business."
         />
       </Head>
       <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
+        title="Why I think I am best suited for your project."
         intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
       >
         <div className="space-y-20">
