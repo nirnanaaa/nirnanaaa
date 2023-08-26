@@ -27,3 +27,23 @@ jobs:
         git add CV.pdf
         git commit -am "Updated CV at $(date) [skip ci]"
         git push -f origin main
+  deploy:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          workload_identity_provider: 'projects/699258513846/locations/global/workloadIdentityPools/github/providers/github'
+          service_account: 'github-actions@homepage-397015.iam.gserviceaccount.com'
+  
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v1'
+        with:
+          version: '>= 363.0.0'
+    needs:
+      - prereq

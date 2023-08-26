@@ -21,16 +21,10 @@ const navigation = {
       { name: 'Xing', href: 'https://www.xing.com/profile/Florian_Kasper8/cv' },
       { name: 'LinkedIn', href: 'https://linkedin.com/in/fkconsultin' },
     ],
-    support: [
-      { name: 'Pricing', href: '#' },
-      { name: 'Documentation', href: '#' },
-      { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
-    ],
     company: [
       { name: 'About', href: '/about' },
       { name: 'Articles', href: '/articles' },
-      { name: 'Projects', href: '/projects' },
+      { name: 'Clients', href: '/clients' },
       { name: 'Uses', href: '/uses' },
     ],
     legal: [
@@ -100,18 +94,6 @@ export function Footer() {
               <h3 className="text-sm font-semibold leading-6 text-white">Platforms</h3>
               <ul role="list" className="mt-6 space-y-4">
                 {navigation.platforms.map((item) => (
-                  <li key={item.name}>
-                    <NavLink href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
-                      {item.name}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-10 md:mt-0">
-              <h3 className="text-sm font-semibold leading-6 text-white">Partners</h3>
-              <ul role="list" className="mt-6 space-y-4">
-                {navigation.support.map((item) => (
                   <li key={item.name}>
                     <NavLink href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                       {item.name}

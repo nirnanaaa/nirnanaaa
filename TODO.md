@@ -1,0 +1,4 @@
+- contact page
+- about me
+- past projects
+- home page
