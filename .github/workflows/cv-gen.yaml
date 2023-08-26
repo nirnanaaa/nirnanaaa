@@ -47,7 +47,7 @@ jobs:
           version: '>= 363.0.0'
       - name: Build docker image
         run: |
-          gcloud auth configure-docker europe-west3-docker.pkg.dev
+          gcloud auth configure-docker europe-west3-docker.pkg.dev --quiet
           docker build -t -t europe-west3-docker.pkg.dev/homepage-397015/floriankaspercom/homepage:${{ github.sha }} .
           docker push europe-west3-docker.pkg.dev/homepage-397015/floriankaspercom/homepage:${{ github.sha }}
     needs:
