@@ -45,5 +45,11 @@ jobs:
         uses: 'google-github-actions/setup-gcloud@v1'
         with:
           version: '>= 363.0.0'
+      - name: Build docker image
+        run: |
+          gcloud auth configure-docker \                                                                                   nirnanaaa -> main ? ! —
+            europe-west3-docker.pkg.dev
+          docker build -t -t europe-west3-docker.pkg.dev/homepage-397015/floriankaspercom/homepage:${{ github.sha }} .
+          docker push europe-west3-docker.pkg.dev/homepage-397015/floriankaspercom/homepage:${{ github.sha }}
     needs:
       - prereq
