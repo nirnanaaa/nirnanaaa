@@ -14,7 +14,7 @@ faq_sheet:
     - English and German
   - title: Availability
     values:
-    - "8/1/2023"
+    - "1/1/2024"
   - title: Competencies and Skills
     values:
       - Development and design of scalable architectures and stacks using bleeding edge as well as well established tools and languages like Go, Kubernetes, Helm and Terraform
@@ -55,7 +55,7 @@ knowledge_graph:
     - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (++), PHP (++), Java (+), SQL (+)"
   - title: "Databases"
     values:
-    - "MySQL (++), PostgreSQL(++), Cassandra (+), Elasticsearch(++), Redis (++)"
+    - "PostgreSQL / CockroachDB (++), MySQL (++), Cassandra (+), Elasticsearch(++), Redis (++)"
   - title: "OS"
     values:
     - "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
@@ -80,6 +80,19 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
+  - client: Klingel K - Mail Order GmbH & Co. KG
+    industry: Online Retailer
+    role: SRE
+    start: 08/2023
+    end: ""
+    tech: Ansible, Ubuntu, K3s, PostgreSQL
+    clientLink: www.klingel-gruppe.de
+    clientLogo: /clients/klingel.svg
+    invertedSortingWeight: 2
+    key_points:
+      - Interim System Administration of the return departments applications using Ansible and Ubuntu
+      - Service migration of Nexus, EFK/ELK and Monitoring solutions to a new hosting provider
+      - Reliability improvements and establishing automated backups for the in-house hosted databases
   - client: EnBW AG
     industry: Utilities
     role: Dev-Ops and SRE-Consultant
