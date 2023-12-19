@@ -14,15 +14,15 @@ faq_sheet:
     - English and German
   - title: Availability
     values:
-    - "1/1/2024"
+    - "15/1/2024"
   - title: Competencies and Skills
     values:
       - Development and design of scalable architectures and stacks using bleeding edge as well as well established tools and languages like Go, Kubernetes, Helm and Terraform
-      - Backend-Development using Go(lang), Node.JS, Ruby, PHP
+      - Backend-Development using Go(lang), Typescript, Ruby, PHP
       - Frontend-Development with React.JS
-      - Asynchronous and distributed platforms Kafka, Redis und GRPC
-      - Setup and administration of on-premise and cloud based environments using Infrastructure-as-Code (IaC) or automation tooling like Saltstack, Ansible, Puppet or Chef
-      - Collaborate on Design and Development of Architecture and Design of microservice platforms on Bare-Metal, Kubernetes, AWS and Google Cloud Platform
+      - Asynchronous and distributed platforms Kafka, Pub-Sub, Queues und GRPC
+      - Setup and administration of on-premise and cloud based environments using Infrastructure-as-Code (IaC) or automation tooling like Saltstack and Ansible
+      - Collaborate on Architecture and the development of microservice platforms on Bare-Metal, Kubernetes, AWS and Google Cloud Platform
   - title: Industry Know-How
     values:
       - Tech, Online Retail, Utilities, Sports, Industrials, Defense, Marketing
@@ -40,10 +40,10 @@ faq_sheet:
 knowledge_graph:
   - title: "Compute"
     values:
-    - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), Linux / Windows / MacOS administration in on-premise environments"
+    - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), Linux / MacOS administration in on-premise environments"
   - title: "Observability"
     values:
-    - "Prometheus (++), EFK-Stack (Elasticsearch, Fluentd, Kibana) (++), Datadog (++), Grafana (++)"
+    - "Prometheus (++), EFK-Stack (Elasticsearch, Fluentd, Kibana) (++), AWS Cloudwatch (+++), Datadog (++), Grafana (++)"
   - title: "IaC - Infrastructure as Code"
     values:
     - "Cloudformation (+++), Terraform (+++), AWS CDK (+++), Azure ARM (++), Ansible (++), Puppet (++)"
@@ -61,13 +61,13 @@ knowledge_graph:
     - "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
   - title: "Protocols"
     values:
-    - "GRPC (+++), Oauth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf (+++), SMTP (++), Kafka (+), WebRTC (+), XMPP(+)"
+    - "GRPC (+++), OAuth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf / GRPC (+++), SMTP (++), Kafka (+), WebRTC (+)"
   - title: "Methodologies"
     values:
     - "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
   - title: "Frameworks, Testsuites"
     values:
-    - "Go test (+++), Kubebuilder (+++), React.JS (+++), Node.JS (+++), Ruby on Rails (++), Mocha(++), Jest(+++), ZeroMQ (++)"
+    - "Go test (+++), Kubebuilder (+++), React.js (+++), Next.js (+++), Ruby on Rails (++), Jest(+++), ZeroMQ (++)"
 
 permanent_positions:
   - start: 09/2011
