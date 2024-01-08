@@ -175,7 +175,7 @@ history:
       - Migrated the company’s source code management system with 230 repositories from Bitbucket to GitHub enterprise. Strengthened security through the use of SAML, 2-factor authentication and SCIM based user provisioning.
       - Created tools in go and typescript for engineering managers to self manage their team members and to enable role based access control for each of these applications within Azure AD.
   - client: Juratherm GmbH
-    tech: Kubernetes, Ansible, CUPS, CentOS Linux, Rbackup, Slack, Ceph, CSI, Velero (ARK)
+    tech: Kubernetes, AWS, Ansible, CUPS, CentOS Linux, Rbackup, Slack, Ceph, CSI, Velero (ARK)
     industry: Industrials
     start: 05/2018
     end: ""
