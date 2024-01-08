@@ -130,7 +130,7 @@ history:
     clientLink: immobilienscout24.de
     clientLogo: /clients/is24.webp
     shortSummary: Company-wide hosting platform for microservices
-    invertedSortingWeight: 2
+    invertedSortingWeight: 1
     key_points:
       - Built kubernetes custom resources and controllers in go, which offer a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints for internal developers. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
       - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
@@ -180,12 +180,12 @@ history:
     start: 05/2018
     end: ""
     role: System Architect and SRE
-    invertedSortingWeight: 3
+    invertedSortingWeight: 1
     clientLink: juratherm.com
     clientLogo: /clients/Logo_Juratherm.svg
     shortSummary: IoT Devices and Manufacturing Automation
     key_points:
-      - Concept and implementation of the companies runtime infrastructure, account and runtime security on AWS
+      - Concept and implementation of the companies runtime infrastructure, account and runtime security on AWS, including the migration of critical infrastructure during runtime by leveraging modern Infrastructure as Code techniques (CDK, Cloudformation).
       - Design and integrate Backup and Desaster recovery plans
       - Design and Develop microservice authentication patterns using OAuth/OpenID Connect and SAML
   - client: AutoScout24 GmbH
