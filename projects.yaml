@@ -220,7 +220,7 @@ history:
     start: 03/2016
     end: 12/2019
     role: Software Developer and SRE
-    tech: React, PHP, Kubernetes, GitHub
+    tech: React, PHP, Kubernetes, AWS, GitHub
     clientLink: www.7pointmedia.com
     clientLogo: /clients/sevenpoint.png
     shortSummary: Membership and Device Management for EMS-based training
