@@ -88,6 +88,7 @@ history:
     tech: Ansible, Ubuntu, K3s, PostgreSQL
     clientLink: www.klingel-gruppe.de
     clientLogo: /clients/klingel.svg
+    shortSummary: Interim System Management and establishing a new Observability pipeline
     invertedSortingWeight: 2
     key_points:
       - Interim System Administration of the return departments applications using Ansible and Ubuntu
@@ -101,7 +102,7 @@ history:
     tech: Kubernetes, Harbor, Golang, AWS
     clientLink: enbw.com
     clientLogo: /clients/enbw.png
-    shortSummary: Infrastructure and OS patch automation tooling
+    shortSummary: Kubernetes On-Premise Infrastructure and OS patch automation tooling
     invertedSortingWeight: 1
     key_points:
       - Design and develop a distributed, grpc based system in go to automatically update all linux servers in the companies backend networks in regular intervals.
@@ -117,7 +118,7 @@ history:
     invertedSortingWeight: 9
     clientLink: adbsafegate.com
     clientLogo: /clients/adbsg.png
-    shortSummary: End-User deployment processes
+    shortSummary: Kubernetes-based Application Edge deployments and infrastructure
     key_points:
     - "Designed and enhanced a standardized helmfile-based deployment pipeline for quickly deploying kubernetes clusters with a standardized setup across different environments, platforms and infrastructure"
     - "Support and guide the in-house development team with kubernetes training and scalable and fault-tolerant architecture patterns"
@@ -129,7 +130,7 @@ history:
     tech: Kubernetes, AWS, Golang, CDK
     clientLink: immobilienscout24.de
     clientLogo: /clients/is24.webp
-    shortSummary: Company-wide hosting platform for microservices
+    shortSummary: Company-wide hosting platform for microservices and AWS account migration
     invertedSortingWeight: 1
     key_points:
       - Built kubernetes custom resources and controllers in go, which offer a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints for internal developers. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
@@ -143,7 +144,7 @@ history:
     tech: Kubernetes, Golang
     clientLink: ionos.de
     clientLogo: /clients/ionos.png
-    shortSummary: Kubernetes Cloud Offering
+    shortSummary: In-Hose on-premise Kubernetes Cloud Offering and automation tooling
     key_points:
       - Help to build and maintain a Kubernetes PaaS offering for > 10000 customers. Tooling is fully written in go and automatically tested using CI and build pipelines
   - client: AMAN Media GmbH
@@ -168,7 +169,7 @@ history:
     invertedSortingWeight: 4
     clientLink: baxter.com
     clientLogo: /clients/baxter.png
-    shortSummary: Role Based Access Control Policies and Automation
+    shortSummary: Role Based Access Control Policies and Kubernetes Infrastructure
     key_points:
       - Established reliable operation of 3 - AKS - kubernetes clusters in a development team of 400 developers, previously only accustomed to on premise deployments.
       - Migrated 25 java-based apps to containers, automated github workflows and helm deployments for lifecycle management. This decreased the lead and deploy time for software changes from multiple hours to a maximum of 5 minutes.
@@ -183,7 +184,7 @@ history:
     invertedSortingWeight: 1
     clientLink: juratherm.com
     clientLogo: /clients/Logo_Juratherm.svg
-    shortSummary: IoT Devices and Manufacturing Automation
+    shortSummary: IoT Devices, AWS Account Management and Manufacturing Automation
     key_points:
       - Concept and implementation of the companies runtime infrastructure, account and runtime security on AWS, including the migration of critical infrastructure during runtime by leveraging modern Infrastructure as Code techniques (CDK, Cloudformation).
       - Design and integrate Backup and Desaster recovery plans
@@ -208,7 +209,7 @@ history:
     invertedSortingWeight: 5
     clientLink: www.100days.de
     clientLogo: /clients/logo_kleinesR.svg
-    shortSummary: Cloud Collaboration and Password Manager
+    shortSummary: On-Premise Kubernetes Setup, Cloud Collaboration Suite and Online Password Manager
     key_points:
       - Develop an office-suite-like (Excel, Word) solution frontend for small-to-medium-sized businesses using React.JS and Typescript
       - Concept and Development of a Google-Drive like storage service. Frontend is written in React.JS, backend in Go

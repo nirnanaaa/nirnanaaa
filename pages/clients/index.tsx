@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { readCV } from '@/app/projects'
+import { Resume } from '@/components/Resume'
 
 // const projects = [
 //   {
@@ -95,6 +96,7 @@ export default function Projects() {
             </Card>
           ))}
         </ul>
+        <Resume />
       </SimpleLayout>
     </>
   )
