@@ -6,6 +6,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
+import Head from 'next/head'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -123,6 +124,13 @@ export default function Home() {
 
   return (
     <>
+    <Head>
+        <title>Florian Kasper - Software Architect - Infrastructure - SRE</title>
+        <meta
+            name="description"
+            content="I’m Florian Kasper. Passionate Cloud Architect and SRE, with a focus on computing infrastructure and developer-focused computing experiences."
+        />
+    </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
