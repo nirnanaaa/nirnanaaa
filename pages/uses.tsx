@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { Resume } from '@/components/Resume'
 
 function ToolsSection({ children, ...props }) {
   return (
@@ -73,6 +74,7 @@ export default function Uses() {
           </ToolsSection>
         </div>
       </SimpleLayout>
+      <Resume />
     </>
   )
 }

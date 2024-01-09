@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { Resume } from '@/components/Resume';
 
 export default function About() {
     return (
@@ -18,6 +19,7 @@ export default function About() {
             >
             
             If you need any help decluttering your own infrastructure, please contact me at <a href="mailto:info@florian-kasper.com" className="link">info@florian-kasper.com</a>.
+            <Resume />
 
             </SimpleLayout>
     </>
