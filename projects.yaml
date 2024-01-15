@@ -95,20 +95,20 @@ history:
       - Develop a headless (automated) saltstack-based command execution engine in go, which can run commands on remote servers securely.
       - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
       - Design and configure runtime security software for intrusion- and attack vector detection during the runtime of a linux process within kubernetes.
-   - client: Scout24 AG
-     industry: Online
-     role: Platform Engineer
-     start: 06/2019 - 11/2019, 07/2021
-     end: "08/2022"
-     tech: Kubernetes, AWS, Golang, CDK
-     clientLink: immobilienscout24.de
-     clientLogo: /clients/is24.webp
-     shortSummary: Company-wide hosting platform for microservices and AWS account migration
-     invertedSortingWeight: 1
-     key_points:
-       - Built kubernetes custom resources and controllers in go, which offer a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints for internal developers. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
-       - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
-       - During the process of an organizational carve-out, that I participated in - 150 services (of the back then 600 services) were moved - without downtime - into new organizational structures. Services were including relational databases, AWS account resources, kubernetes controllers and service deployment resources.
+  - client: Scout24 AG
+    industry: Online
+    role: Platform Engineer
+    start: 06/2019 - 11/2019, 07/2021
+    end: "08/2022"
+    tech: Kubernetes, AWS, Golang, CDK
+    clientLink: immobilienscout24.de
+    clientLogo: /clients/is24.webp
+    shortSummary: Company-wide hosting platform for microservices and AWS account migration
+    invertedSortingWeight: 1
+    key_points:
+      - Built kubernetes custom resources and controllers in go, which offer a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints for internal developers. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
+      - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
+      - During the process of an organizational carve-out, that I participated in - 150 services (of the back then 600 services) were moved - without downtime - into new organizational structures. Services were including relational databases, AWS account resources, kubernetes controllers and service deployment resources.
   - client: Klingel K - Mail Order GmbH & Co. KG
     industry: Online Retailer
     role: SRE
