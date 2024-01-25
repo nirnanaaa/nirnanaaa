@@ -97,7 +97,7 @@ history:
       - Design and configure runtime security software for intrusion- and attack vector detection during the runtime of a linux process within kubernetes.
   - client: Scout24 AG
     industry: Online
-    role: Platform Engineer
+    role: Dev-Ops / Platform Engineer
     start: 06/2019 - 11/2019, 07/2021
     end: "08/2022"
     tech: Kubernetes, AWS, Golang, CDK
@@ -139,7 +139,7 @@ history:
 
   - client: IONOS SE
     industry: Online
-    role: Platform Engineer
+    role: Dev-Ops / Platform Engineer
     start: 12/2021
     end: "03/2022"
     tech: Kubernetes, Golang
@@ -162,7 +162,7 @@ history:
       - Introduce Infrastructure-as-Code (IaC) to the developers and build automated CI deployment pipelines and infrastructure in Jenkins
       - Introduce and establish Opsgenie for alert routing and triage and connect it to the production environment
   - client: Baxter International
-    role: SRE
+    role: Dev-Ops / SRE
     industry: Healthcare
     start: 07/2020
     end: ""
@@ -181,7 +181,7 @@ history:
     industry: Industrials
     start: 05/2018
     end: ""
-    role: System Architect and SRE
+    role: System Architect and Dev-Ops
     invertedSortingWeight: 1
     clientLink: juratherm.com
     clientLogo: /clients/Logo_Juratherm.svg
@@ -200,7 +200,7 @@ history:
       - Develop a React.JS based frontend using Typescript for an online car selling platform, where car dealers can view and manage their active listings and see their performance numbers
     tech: AWS, Kubernetes, Golang, React.JS
     industry: Online
-    role: Frontend Developer / Platform Engineer
+    role: Frontend Developer
   - client: 100 days Software Projects GmbH
     industry: Online
     start: 01/2018
