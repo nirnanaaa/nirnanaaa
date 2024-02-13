@@ -85,7 +85,7 @@ fn main() -> Result<(), Error> {
                 elements::Paragraph::new("Florian Kasper").aligned(Alignment::Center)
                     .styled(style::Style::new().with_font_size(20).with_color(style::Color::Rgb(242, 183, 5)))
             ).element(
-                elements::Paragraph::new("Lead DevOps Engineer").aligned(Alignment::Center)
+                elements::Paragraph::new("Software and DevOps Engineer").aligned(Alignment::Center)
                     .styled(style::Style::new().with_font_size(13).with_color(style::Color::Rgb(226, 232, 217)))
             ).element(
                 tbl.padded(Margins::trbl(4, 0, 0, 0))

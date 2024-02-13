@@ -28,7 +28,7 @@ faq_sheet:
       - Tech, Online Retail, Utilities, Sports, Industrials, Defense, Marketing
   - title: Previous Responsibilities
     values:
-      - Software Architect / Site Reliability Engineering (SRE) / Dev-Ops / Platform Engineering
+      - Software Architect / Software Developer / Dev-Ops / Platform Engineering
   - title: Education
     values:
       - until 2011 Middle Grade from staatl. Realschule Höchstadt a.d. Aisch
@@ -82,10 +82,10 @@ links:
 history:
   - client: EnBW AG
     industry: Utilities
-    role: Dev-Ops and SRE-Consultant
+    role: Software Developer and Dev-Ops
     start: multiple, latest 10/2022
     end: ""
-    tech: Kubernetes, Harbor, Golang, AWS
+    tech: Golang, Kubernetes, Harbor, AWS
     clientLink: enbw.com
     clientLogo: /clients/enbw.png
     shortSummary: Kubernetes On-Premise Infrastructure and OS patch automation tooling
@@ -97,10 +97,10 @@ history:
       - Design and configure runtime security software for intrusion- and attack vector detection during the runtime of a linux process within kubernetes.
   - client: Scout24 AG
     industry: Online
-    role: Dev-Ops / Platform Engineer
+    role: Software Developer and Dev-Ops
     start: 06/2019 - 11/2019, 07/2021
     end: "08/2022"
-    tech: Kubernetes, AWS, Golang, CDK
+    tech: Kubernetes, Golang, AWS, CDK
     clientLink: immobilienscout24.de
     clientLogo: /clients/is24.webp
     shortSummary: Company-wide hosting platform for microservices and AWS account migration
@@ -111,7 +111,7 @@ history:
       - During the process of an organizational carve-out, that I participated in - 150 services (of the back then 600 services) were moved - without downtime - into new organizational structures. Services were including relational databases, AWS account resources, kubernetes controllers and service deployment resources.
   - client: Klingel K - Mail Order GmbH & Co. KG
     industry: Online Retailer
-    role: SRE
+    role: Dev-Ops
     start: 08/2023
     end: ""
     tech: Ansible, Kubernetes, Ubuntu, K3s, PostgreSQL
@@ -177,7 +177,7 @@ history:
       - Migrated the company’s source code management system with 230 repositories from Bitbucket to GitHub enterprise. Strengthened security through the use of SAML, 2-factor authentication and SCIM based user provisioning.
       - Created tools in go and typescript for engineering managers to self manage their team members and to enable role based access control for each of these applications within Azure AD.
   - client: Juratherm GmbH
-    tech: Kubernetes, AWS, Ansible, CUPS, CentOS Linux, Rbackup, Slack, Ceph, CSI, Velero (ARK)
+    tech: Kubernetes, AWS, Ansible, CUPS, Slack, CSI
     industry: Industrials
     start: 05/2018
     end: ""
@@ -198,9 +198,9 @@ history:
     shortSummary: Offer management for car dealerships
     key_points:
       - Develop a React.JS based frontend using Typescript for an online car selling platform, where car dealers can view and manage their active listings and see their performance numbers
-    tech: AWS, Kubernetes, Golang, React.JS
+    tech: React.JS, AWS, Golang
     industry: Online
-    role: Frontend Developer
+    role: Software Developer
   - client: 100 days Software Projects GmbH
     industry: Online
     start: 01/2018
