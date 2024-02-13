@@ -52,7 +52,7 @@ knowledge_graph:
     - "Amazon Web Services (AWS) (+++), Google Cloud Platform (++), Microsoft Azure (++)"
   - title: "Programming Languages"
     values:
-    - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (++), PHP (++), Java (+), SQL (+)"
+    - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (+++), PHP (++), Java (+), SQL (+)"
   - title: "Databases"
     values:
     - "PostgreSQL / CockroachDB (++), MySQL (++), Cassandra (+), Elasticsearch(++), Redis (++)"
@@ -67,7 +67,7 @@ knowledge_graph:
     - "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
   - title: "Frameworks, Testsuites"
     values:
-    - "Go test (+++), Kubebuilder (+++), React.js (+++), Next.js (+++), Ruby on Rails (++), Jest(+++), ZeroMQ (++)"
+    - "Go test (+++), Kubebuilder (+++), React.js (+++), Next.js (+++), Ruby on Rails (+++), Jest(+++), ZeroMQ (++)"
 
 permanent_positions:
   - start: 09/2011
