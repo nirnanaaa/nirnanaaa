@@ -38,6 +38,12 @@ faq_sheet:
       - AWS Certified Solutions Architect - Associate (SAA)
 
 knowledge_graph:
+  - title: "Programming Languages"
+    values:
+    - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (+++), PHP (++), Java (+), SQL (+)"
+  - title: "Protocols"
+    values:
+    - "GRPC (+++), OAuth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf / GRPC (+++), SMTP (++), Kafka (+), WebRTC (+)"
   - title: "Compute"
     values:
     - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), Linux / MacOS administration in on-premise environments"
@@ -50,18 +56,12 @@ knowledge_graph:
   - title: "Cloud Providers"
     values:
     - "Amazon Web Services (AWS) (+++), Google Cloud Platform (++), Microsoft Azure (++)"
-  - title: "Programming Languages"
-    values:
-    - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (+++), PHP (++), Java (+), SQL (+)"
   - title: "Databases"
     values:
     - "PostgreSQL / CockroachDB (++), MySQL (++), Cassandra (+), Elasticsearch(++), Redis (++)"
   - title: "OS"
     values:
     - "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
-  - title: "Protocols"
-    values:
-    - "GRPC (+++), OAuth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf / GRPC (+++), SMTP (++), Kafka (+), WebRTC (+)"
   - title: "Methodologies"
     values:
     - "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
@@ -113,7 +113,7 @@ history:
     industry: Online Retailer
     role: Dev-Ops
     start: 08/2023
-    end: ""
+    end: 02/2024
     tech: Ansible, Kubernetes, Ubuntu, K3s, PostgreSQL
     clientLink: www.klingel-gruppe.de
     clientLogo: /clients/klingel.svg
