@@ -44,7 +44,8 @@ RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
-COPY CV.pdf ./public/CV.pdf
+COPY cv_en.pdf ./public/CV.pdf
+COPY cv_de.pdf ./public/CV_de.pdf
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing

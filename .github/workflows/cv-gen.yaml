@@ -10,21 +10,18 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - uses: actions-rs/toolchain@v1
+
+    - uses: actions/setup-python@v5
       with:
-        toolchain: stable
-    - uses: Swatinem/rust-cache@v2
-    - uses: actions-rs/cargo@v1
-      with:
-        command: build
-        args: --release --all-features
-    - run: target/release/nirnanaaa
+        python-version: '3.11'
+    - run: cd gen; pipenv install;python generator.py
     - id: commit_files
       name: Commit files  
       run: |
         git config --local user.name actions-user
         git config --local user.email "actions@github.com"
-        git add CV.pdf
+        git add cv_de.pdf
+        git add cv_en.pdf
         git commit -am "Updated CV at $(date) [skip ci]"
         git push -f origin main
   build:
