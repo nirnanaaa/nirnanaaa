@@ -82,6 +82,20 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
+  - client: Teleson AG
+    industry: Marketing
+    role: Dev-Ops and Platform-Engineer
+    start: 05/2024
+    end: "10/2024"
+    tech: AWS, Golang, Saltstack
+    clientLink: teleson.de
+    clientLogo: /clients/teleson.png
+    shortSummary: AWS Cloud Migration and implementation of AWS best practice patterns
+    invertedSortingWeight: 2
+    key_points:
+    - By implementing unix level automation we were able to reduce the downtime during incidents and improve the deployment time of all company owned servers.
+    - By changing the deployment method from manually provisioned servers and infrastructure to industry best practices (Infrastructure as Code - IaC) I was able to increase the reliability and boost team confidence when deploying code changes
+    - By implementing a CI/CD deployment system we were able to reduce the amount of interactions that admins had to go through during deployment
   - client: EnBW AG
     industry: Utilities
     role: Software Developer and Dev-Ops

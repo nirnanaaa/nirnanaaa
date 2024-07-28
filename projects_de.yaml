@@ -77,11 +77,25 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
+  - client: Teleson AG
+    industry: Marketing
+    role: Dev-Ops und Platform-Engineer
+    start: 05/2024
+    end: "10/2024"
+    tech: AWS, Golang, Saltstack
+    clientLink: teleson.de
+    clientLogo: /clients/teleson.png
+    shortSummary: AWS Cloud Migration und Einfuehrung von Cloud und Sicherheitspraktiken
+    invertedSortingWeight: 2
+    key_points:
+    - Durch die Implementierung einer Automatisierungsinfrastruktur war das Team in der Lage Fehler frúhzeitig zu erkennen und eine Übersicht über Ihre deployten Programme und Scripte zu erhalten. 
+    - In dem wir die Provisionierungen von - zuvor - manuell erstellten Servern auf Industrie-Best-Practices (Infrastructure as Code - IaC) migriert haben konnten wie die Zuverlaessigkeit des Gesamtsystemes verbessern.
+    - Durch die Einführung einer CI/CD Lösung konnten wir die Anzahl an manuellen Interaktionen waehrend eines Deployment-Vorganges reduzieren.
   - client: EnBW AG
     industry: Energieversorger
     role: Software Entwickler und Dev-Ops
     start: mehrere, zuletzt 10/2022
-    end: ""
+    end: "06/2024"
     tech: Golang, Kubernetes, Harbor, AWS
     clientLink: enbw.com
     clientLogo: /clients/enbw.png
