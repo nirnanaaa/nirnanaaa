@@ -93,9 +93,11 @@ history:
     shortSummary: AWS Cloud Migration and implementation of AWS best practice patterns
     invertedSortingWeight: 2
     key_points:
-    - By implementing unix level automation we were able to reduce the downtime during incidents and improve the deployment time of all company owned servers.
+    - By implementing unix level automation, on premise and on AWS, we were able to reduce the downtime during incidents and improve the deployment time of all company owned servers.
     - By changing the deployment method from manually provisioned servers and infrastructure to industry best practices (Infrastructure as Code - IaC) I was able to increase the reliability and boost team confidence when deploying code changes
     - By implementing a CI/CD deployment system we were able to reduce the amount of interactions that admins had to go through during deployment
+    - By introducing the company to containerized architecture (i.e. Kubernetes) and deployments, we could reduce the time to deploy and deploy applications in isolation. Deployment times changed from around 30min for a full EC2 instance rebuild to less than 2min.
+  
   - client: EnBW AG
     industry: Utilities
     role: Software Developer and Dev-Ops
