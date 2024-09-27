@@ -91,13 +91,27 @@ history:
     clientLink: teleson.de
     clientLogo: /clients/teleson.png
     shortSummary: AWS Cloud Migration and implementation of AWS best practice patterns
-    invertedSortingWeight: 2
+    invertedSortingWeight: 1
     key_points:
     - By implementing unix level automation, on premise and on AWS, we were able to reduce the downtime during incidents and improve the deployment time of all company owned servers.
     - By changing the deployment method from manually provisioned servers and infrastructure to industry best practices (Infrastructure as Code - via CDK) I was able to increase the reliability and boost team confidence when deploying code changes
     - By implementing a CI/CD deployment system on GitHub Actions we were able to reduce the amount of interactions that admins had to go through during deployment
     - By introducing the company to containerized architecture (i.e. Kubernetes or more precise EKS) and deployments, we could reduce the time to deploy and deploy applications in isolation. Deployment times changed from around 30min for a full EC2 instance rebuild to less than 2min.
-  
+  - client: Juratherm GmbH
+    tech: Kubernetes, AWS, Ansible, CUPS, Slack, CSI
+    industry: Industrials
+    start: 05/2018
+    end: ""
+    role: System Architect and Dev-Ops
+    invertedSortingWeight: 1
+    clientLink: juratherm.com
+    clientLogo: /clients/Logo_Juratherm.svg
+    shortSummary: IoT Devices, AWS Account Management and Manufacturing Automation
+    key_points:
+      - Concept and implementation of the companies runtime infrastructure, account and runtime security on AWS, including the migration of critical infrastructure during runtime by leveraging modern Infrastructure as Code techniques (CDK, Cloudformation).
+      - Design and Develop microservice authentication patterns using OAuth/OpenID Connect and SAML in Go using Smartcards/Yubikeys in Go
+      - Development of a distributed, GRPC based printspooler and server in Go
+
   - client: EnBW AG
     industry: Utilities
     role: Software Developer and Dev-Ops
@@ -194,20 +208,6 @@ history:
       - Migrated 25 java-based apps to containers, automated github workflows and helm deployments for lifecycle management. This decreased the lead and deploy time for software changes from multiple hours to a maximum of 5 minutes.
       - Migrated the company’s source code management system with 230 repositories from Bitbucket to GitHub enterprise. Strengthened security through the use of SAML, 2-factor authentication and SCIM based user provisioning.
       - Created tools in go and typescript for engineering managers to self manage their team members and to enable role based access control for each of these applications within Azure AD.
-  - client: Juratherm GmbH
-    tech: Kubernetes, AWS, Ansible, CUPS, Slack, CSI
-    industry: Industrials
-    start: 05/2018
-    end: ""
-    role: System Architect and Dev-Ops
-    invertedSortingWeight: 1
-    clientLink: juratherm.com
-    clientLogo: /clients/Logo_Juratherm.svg
-    shortSummary: IoT Devices, AWS Account Management and Manufacturing Automation
-    key_points:
-      - Concept and implementation of the companies runtime infrastructure, account and runtime security on AWS, including the migration of critical infrastructure during runtime by leveraging modern Infrastructure as Code techniques (CDK, Cloudformation).
-      - Design and integrate Backup and Desaster recovery plans
-      - Design and Develop microservice authentication patterns using OAuth/OpenID Connect and SAML
   - client: AutoScout24 GmbH
     start: 11/2019
     end: 04/2020

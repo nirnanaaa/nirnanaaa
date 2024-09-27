@@ -38,7 +38,7 @@ knowledge_graph:
     - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (+++), PHP (++), Java (+), SQL (+)"
   - title: "Protokolle"
     values:
-    - "GRPC (+++), OAuth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf / GRPC (+++), SMTP (++), Kafka (+), WebRTC (+)"
+    - "GRPC (+++), OAuth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf / GRPC (+++), MQTT (+++), SMTP (++), Kafka (++)"
   - title: "Compute"
     values:
     - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), Linux / MacOS administration in on-premise environments"
@@ -86,12 +86,26 @@ history:
     clientLink: teleson.de
     clientLogo: /clients/teleson.png
     shortSummary: AWS Cloud Migration und Einfuehrung von Cloud und Sicherheitspraktiken
-    invertedSortingWeight: 2
+    invertedSortingWeight: 1
     key_points:
-    - Durch die Implementierung einer Automatisierungsinfrastruktur war das Team in der Lage Fehler frühzeitig zu erkennen und eine Übersicht über Ihre deployten Programme und Scripte zu erhalten. 
+    - Durch die Implementierung einer Automatisierungsinfrastruktur in Go war das Team in der Lage Fehler frühzeitig zu erkennen und eine Übersicht über Ihre deployten Programme und Scripte zu erhalten. 
     - In dem wir die Provisionierungen von - zuvor - manuell erstellten Servern auf Industrie-Best-Practices (Infrastructure as Code via CDK) migriert haben konnten wie die Zuverlaessigkeit des Gesamtsystemes verbessern.
     - Durch die Einführung einer CI/CD Lösung konnten wir die Anzahl an manuellen Interaktionen waehrend eines Deployment-Vorganges reduzieren.
     - Durch die Einführung von Containern auf Basis von Kubernetes/EKS und automatisiertem Deployment konnten wir die Zeit und Sicherheit in der Anwendungen bereit gestellt werden von mehr als 30min auf unter 2min verbessern.
+  - client: Juratherm GmbH
+    tech: Kubernetes, AWS, Go, IoT
+    industry: Industrie
+    start: 05/2018
+    end: ""
+    role: System Architect und Dev-Ops
+    invertedSortingWeight: 1
+    clientLink: juratherm.com
+    clientLogo: /clients/Logo_Juratherm.svg
+    shortSummary: IoT Devices, AWS Account Management und Manufacturing Automation
+    key_points:
+      - Konzeptionierung und Implementierung der firmenweiten Server und Cloud-infrastruktur auf AWS inkl live Migration von kritischer Firmeninfrastruktur aus dem Rechenzentrum in die Cloud mittels Infrastructure as Code Techniken (CDK, Cloudformation)
+      - Entwickeln eines verteilten, GRPC-basierten Druckspoolers und -servers mit Go
+      - Entwurf und Entwicklung von einer Microservice-Authentifizierungsstrategie mittels Smartcards/Yubikeys in Go
   - client: EnBW AG
     industry: Energieversorger
     role: Software Entwickler und Dev-Ops
@@ -101,7 +115,7 @@ history:
     clientLink: enbw.com
     clientLogo: /clients/enbw.png
     shortSummary: Kubernetes On-Premise Infrastructure and OS patch automation tooling
-    invertedSortingWeight: 1
+    invertedSortingWeight: 2
     key_points:
       - Entwurf und Entwicklung eines verteilten, grpc-basierten Systems in go zur automatischen Aktualisierung aller Linux-Server in den Backend-Netzwerken des Unternehmens in regelmäßigen Abständen.
       - Entwicklung einer Headless (automatisierten) Saltstack-basierten Befehlsausführungs-Engine in Go, die Befehle auf entfernten Servern sicher ausführen kann.
@@ -188,20 +202,7 @@ history:
       - Migration von 25 Java-basierten Anwendungen auf Container, Automatisierung von Github-Workflows und Helm-Deployments für das Lifecycle-Management. Dadurch konnte die Vorlauf- und Bereitstellungszeit für Softwareänderungen von mehreren Stunden auf maximal 5 Minuten reduziert werden.
       - Das Quellcode-Verwaltungssystem des Unternehmens mit 230 Repositories und 400 Mitarbeitern wurde von Bitbucket auf GitHub Enterprise migriert. Verbesserte Sicherheit haben wir durch den Einsatz von SAML, 2-Faktor-Authentifizierung und SCIM-basierter Benutzerbereitstellung implementiert.
       - Erstellung von Tools in Go und Typescript für Engineering Manager zur Selbstverwaltung ihrer Teammitglieder und zur Aktivierung einer rollenbasierten Zugriffskontrolle für jede dieser Anwendungen innerhalb von Azure AD.
-  - client: Juratherm GmbH
-    tech: Kubernetes, AWS, Ansible, CUPS, Slack, CSI
-    industry: Industrials
-    start: 05/2018
-    end: ""
-    role: System Architect und Dev-Ops
-    invertedSortingWeight: 1
-    clientLink: juratherm.com
-    clientLogo: /clients/Logo_Juratherm.svg
-    shortSummary: IoT Devices, AWS Account Management and Manufacturing Automation
-    key_points:
-      - Konzeptionierung und Implementierung der firmenweiten Server und Cloud-infrastruktur auf AWS inkl live Migration von kritischer Firmeninfrastruktur aus dem Rechenzentrum in die Cloud mittels Infrastructure as Code Techniken (CDK, Cloudformation)
-      - Entwurf und Umsetzung einer Backup und Desaster-Recovery Strategie um Ransomware attacken abzufedern.
-      - Entwurf und Entwicklung von einer Microservice-Authentifizierungsstrategie mittels OAuth/OpenID Connect und SAML
+ 
   - client: AutoScout24 GmbH
     start: 11/2019
     end: 04/2020
