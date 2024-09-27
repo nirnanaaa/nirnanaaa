@@ -9,7 +9,7 @@ faq_sheet:
     - Englisch und Deutsch
   - title: Verfuegbarkeit
     values:
-    - "17.10.2024"
+    - "21.10.2024"
   - title: Kompetenzen und Faehigkeiten
     values:
       - Entwicklung und Design skalierbarer Architekturen und Stacks unter Verwendung modernster sowie etablierter Tools und Sprachen wie Go, Python, Kubernetes, Helm und Terraform
@@ -89,9 +89,9 @@ history:
     invertedSortingWeight: 2
     key_points:
     - Durch die Implementierung einer Automatisierungsinfrastruktur war das Team in der Lage Fehler frühzeitig zu erkennen und eine Übersicht über Ihre deployten Programme und Scripte zu erhalten. 
-    - In dem wir die Provisionierungen von - zuvor - manuell erstellten Servern auf Industrie-Best-Practices (Infrastructure as Code - IaC) migriert haben konnten wie die Zuverlaessigkeit des Gesamtsystemes verbessern.
+    - In dem wir die Provisionierungen von - zuvor - manuell erstellten Servern auf Industrie-Best-Practices (Infrastructure as Code via CDK) migriert haben konnten wie die Zuverlaessigkeit des Gesamtsystemes verbessern.
     - Durch die Einführung einer CI/CD Lösung konnten wir die Anzahl an manuellen Interaktionen waehrend eines Deployment-Vorganges reduzieren.
-    - Durch die Einführung von Containern und automatisiertem Deployment konnten wir die Zeit und Sicherheit in der Anwendungen bereit gestellt werden von mehr als 30min auf unter 2min verbessern.
+    - Durch die Einführung von Containern auf Basis von Kubernetes/EKS und automatisiertem Deployment konnten wir die Zeit und Sicherheit in der Anwendungen bereit gestellt werden von mehr als 30min auf unter 2min verbessern.
   - client: EnBW AG
     industry: Energieversorger
     role: Software Entwickler und Dev-Ops

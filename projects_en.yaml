@@ -14,7 +14,7 @@ faq_sheet:
     - English and German
   - title: Availability
     values:
-    - "10/17/2024 (17.10.2024)"
+    - "10/21/2024 (17.10.2024)"
   - title: Competencies and Skills
     values:
       - Development and design of scalable architectures and stacks using bleeding edge as well as well established tools and languages like Go, Kubernetes, Helm and Terraform
@@ -94,15 +94,15 @@ history:
     invertedSortingWeight: 2
     key_points:
     - By implementing unix level automation, on premise and on AWS, we were able to reduce the downtime during incidents and improve the deployment time of all company owned servers.
-    - By changing the deployment method from manually provisioned servers and infrastructure to industry best practices (Infrastructure as Code - IaC) I was able to increase the reliability and boost team confidence when deploying code changes
-    - By implementing a CI/CD deployment system we were able to reduce the amount of interactions that admins had to go through during deployment
-    - By introducing the company to containerized architecture (i.e. Kubernetes) and deployments, we could reduce the time to deploy and deploy applications in isolation. Deployment times changed from around 30min for a full EC2 instance rebuild to less than 2min.
+    - By changing the deployment method from manually provisioned servers and infrastructure to industry best practices (Infrastructure as Code - via CDK) I was able to increase the reliability and boost team confidence when deploying code changes
+    - By implementing a CI/CD deployment system on GitHub Actions we were able to reduce the amount of interactions that admins had to go through during deployment
+    - By introducing the company to containerized architecture (i.e. Kubernetes or more precise EKS) and deployments, we could reduce the time to deploy and deploy applications in isolation. Deployment times changed from around 30min for a full EC2 instance rebuild to less than 2min.
   
   - client: EnBW AG
     industry: Utilities
     role: Software Developer and Dev-Ops
     start: multiple, latest 10/2022
-    end: ""
+    end: "06/2024"
     tech: Golang, Kubernetes, Harbor, AWS
     clientLink: enbw.com
     clientLogo: /clients/enbw.png
