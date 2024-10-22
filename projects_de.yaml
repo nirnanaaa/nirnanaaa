@@ -192,7 +192,7 @@ history:
     industry: Gesundheitswesen
     start: 07/2020
     end: ""
-    tech: Azure, Kubernetes, Golang, React.JS, GitHub
+    tech: Azure, Kubernetes, Golang, React.JS, GitHub Enterprise, GHEC
     invertedSortingWeight: 4
     clientLink: baxter.com
     clientLogo: /clients/baxter.png
