@@ -9,7 +9,7 @@ faq_sheet:
     - Englisch und Deutsch
   - title: Verfuegbarkeit
     values:
-    - "21.10.2024"
+    - "01.01.2025"
   - title: Kompetenzen und Faehigkeiten
     values:
       - Entwicklung und Design skalierbarer Architekturen und Stacks unter Verwendung modernster sowie etablierter Tools und Sprachen wie Go, Python, Kubernetes, Helm und Terraform
