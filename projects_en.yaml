@@ -117,7 +117,7 @@ history:
     role: Software Developer and Dev-Ops
     start: multiple, latest 10/2022
     end: "06/2024"
-    tech: Golang, Kubernetes, Harbor, AWS
+    tech: Golang, Kubernetes, Harbor, AWS, Gitlab, Vmware vRa/vRo
     clientLink: enbw.com
     clientLogo: /clients/enbw.png
     shortSummary: Kubernetes On-Premise Infrastructure and OS patch automation tooling
