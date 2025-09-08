@@ -9,7 +9,7 @@ faq_sheet:
     - Englisch und Deutsch
   - title: Verfuegbarkeit
     values:
-    - "01.06.2025"
+    - "01.01.2026"
   - title: Kompetenzen und Faehigkeiten
     values:
       - Entwicklung und Design skalierbarer Architekturen und Stacks unter Verwendung modernster sowie etablierter Tools und Sprachen wie Go, Python, Kubernetes, Helm und Terraform
@@ -88,9 +88,9 @@ history:
     shortSummary: Design und Entwicklung einer Mehrstufigen, Workflow basierten Data-Processing-Pipeline
     invertedSortingWeight: 1
     key_points:
-    - Design und Entwicklung einer Mehrstufigen, Workflow basierten Data-Processing-Pipeline
+    - Design und Entwicklung einer Mehrstufigen, Workflow basierten Data-Processing-Pipeline zum einlesen und versenden von Dateien.
     - Durch die Implementierung mehrerer Unabhaeniger Datenadapter, ist es und moeglich neue Datenquellen mit sehr geringem Aufwand anzubinden.
-    - Durch die Implementierungen von Filtern und Middleware Schritten haben wir dem Kunden Werkzeuge an die Hand geben können, mit dessen Hilfe er die Daten komplett flexibel sortieren und verteilen kann.
+    - Durch die Implementierungen von Filter- und Middleware Schritten haben wir dem Kunden Werkzeuge an die Hand geben können, mit dessen Hilfe er eingelesene Daten komplett flexibel sortieren und verteilen kann.
   - client: Teleson AG
     industry: Marketing
     role: Dev-Ops und Platform-Engineer

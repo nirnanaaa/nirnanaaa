@@ -14,7 +14,7 @@ faq_sheet:
     - English and German
   - title: Availability
     values:
-    - "6/1/2025 (1.6.2025)"
+    - "1/1/2026 (1.1.2026)"
   - title: Competencies and Skills
     values:
       - Development and design of scalable architectures and stacks using bleeding edge as well as well established tools and languages like Go, Kubernetes, Helm and Terraform
@@ -83,7 +83,7 @@ links:
     title: GitHub
 history:
   - client: Wilde-IT
-    industry: Finances
+    industry: Financial
     role: Staff Software Developer
     start: 10/2024
     end: ""
@@ -93,7 +93,7 @@ history:
     shortSummary: Design and Development of a Multi-Stage, Workflow based Data Processing Pipeline
     invertedSortingWeight: 1
     key_points:
-    - Design and Development of a Multi-Stage, Workflow based Data Processing Pipeline
+    - Design and Development of a Multi-Stage, Workflow based Data Processing Pipeline for moving around large amounts of files inside and outside the company
     - By using multiple, independent adapters, we managed to allow our client to add in new datasources or targets on demand
     - By using filters and middleware processors, we managed to route and process the incoming files according to the clients demands
   - client: Teleson AG
