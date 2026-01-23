@@ -16,6 +16,7 @@ jobs:
         python-version: '3.11'
     - name: Install pipenv
       run: |
+        sudo apt update
         sudo apt-get install libcairo2-dev libxt-dev
         python -m pip install --upgrade pipenv wheel
     - run: cd gen; pipenv install;pipenv run python generator.py
