@@ -14,7 +14,7 @@ faq_sheet:
     - English and German
   - title: Availability
     values:
-    - "1/1/2026 (1.1.2026)"
+    - "4/1/2026 (1.4.2026)"
   - title: Competencies and Skills
     values:
       - Development and design of scalable architectures and stacks using bleeding edge as well as well established tools and languages like Go, Kubernetes, Helm and Terraform
