@@ -13,11 +13,11 @@ from reportlab.lib.units import mm
 
 PAGE_HEIGHT=defaultPageSize[1]; PAGE_WIDTH=defaultPageSize[0]
 styles = getSampleStyleSheet()
-titleStyle = styles['Heading3']
+titleStyle = styles['SectionTitle']
 paraStyle = styles['BodyText']
 bulletStyle = styles['Bullet']
 definitionStyle = styles['Small']
-boldStyle = styles['Heading5']
+boldStyle = styles['RoleTitle']
 techStyle = styles['Tech']
 
 ACCENT = Color(242/255, 183/255, 5/255)

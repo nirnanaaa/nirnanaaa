@@ -1,6 +1,5 @@
-from reportlab.lib.styles import ParagraphStyle, ListStyle, StyleSheet1
-from reportlab.lib.colors import black, Color
-from reportlab.lib.enums import TA_CENTER
+from reportlab.lib.styles import ParagraphStyle, StyleSheet1
+from reportlab.lib.colors import Color
 
 def getSampleStyleSheet():
     """Returns a stylesheet using Plus Jakarta Sans fonts"""
@@ -20,50 +19,16 @@ def getSampleStyleSheet():
                                   parent=stylesheet['Normal'],
                                   spaceBefore=6)
                    )
-    stylesheet.add(ParagraphStyle(name='Italic',
-                                  parent=stylesheet['BodyText'],
-                                  fontName="PlusJakartaSans-Italic")
-                   )
-    stylesheet.add(ParagraphStyle(name='Heading1',
+    stylesheet.add(ParagraphStyle(name='SectionTitle',
                                   parent=stylesheet['Normal'],
                                   fontName="PlusJakartaSans-SemiBold",
-                                  fontSize=18,
-                                  leading=22,
-                                  spaceAfter=6),
-                   alias='h1')
-    stylesheet.add(ParagraphStyle(name='Title',
-                                  parent=stylesheet['Normal'],
-                                  fontName="PlusJakartaSans-SemiBold",
-                                  fontSize=18,
-                                  leading=22,
-                                  alignment=TA_CENTER,
-                                  spaceAfter=6),
-                   alias='title')
-    stylesheet.add(ParagraphStyle(name='Heading2',
-                                  parent=stylesheet['Normal'],
-                                  fontName="PlusJakartaSans-SemiBold",
-                                  fontSize=14,
-                                  leading=18,
-                                  spaceBefore=12,
-                                  spaceAfter=6),
-                   alias='h2')
-    stylesheet.add(ParagraphStyle(name='Heading3',
-                                  parent=stylesheet['Normal'],
-                                  fontName="PlusJakartaSans-SemiBoldItalic",
                                   fontSize=12,
                                   leading=14,
                                   spaceBefore=12,
-                                  spaceAfter=6),
+                                  spaceAfter=6,
+                                  keepWithNext=1),
                    alias='h3')
-    stylesheet.add(ParagraphStyle(name='Heading4',
-                                  parent=stylesheet['Normal'],
-                                  fontName="PlusJakartaSans-SemiBoldItalic",
-                                  fontSize=10,
-                                  leading=12,
-                                  spaceBefore=10,
-                                  spaceAfter=4),
-                   alias='h4')
-    stylesheet.add(ParagraphStyle(name='Heading5',
+    stylesheet.add(ParagraphStyle(name='RoleTitle',
                                   parent=stylesheet['Normal'],
                                   fontName="PlusJakartaSans-SemiBold",
                                   fontSize=9,
@@ -71,18 +36,10 @@ def getSampleStyleSheet():
                                   spaceBefore=8,
                                   spaceAfter=4),
                    alias='h5')
-    stylesheet.add(ParagraphStyle(name='Heading6',
-                                  parent=stylesheet['Normal'],
-                                  fontName="PlusJakartaSans-SemiBold",
-                                  fontSize=7,
-                                  leading=8.4,
-                                  spaceBefore=6,
-                                  spaceAfter=2),
-                   alias='h6')
     stylesheet.add(ParagraphStyle(name='Bullet',
                                   parent=stylesheet['Normal'],
                                   firstLineIndent=0,
-                                  spaceBefore=3),
+                                  spaceBefore=4),
                    alias='bu')
     stylesheet.add(ParagraphStyle(name='Tech',
                                   parent=stylesheet['Normal'],
@@ -100,20 +57,4 @@ def getSampleStyleSheet():
                                   spaceBefore=6,
                                   bulletFontName="PlusJakartaSans-SemiBoldItalic"),
                    alias='df')
-    stylesheet.add(ParagraphStyle(name='Code',
-                                  parent=stylesheet['Normal'],
-                                  fontName='Courier',
-                                  fontSize=8,
-                                  leading=8.8,
-                                  firstLineIndent=0,
-                                  leftIndent=36,
-                                  hyphenationLang=''))
-    stylesheet.add(ListStyle(name='UnorderedList',
-                                parent=None,
-                            ),
-                   alias='ul')
-    stylesheet.add(ListStyle(name='OrderedList',
-                                parent=None,
-                            ),
-                   alias='ol')
     return stylesheet
