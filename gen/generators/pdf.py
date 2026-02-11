@@ -48,24 +48,24 @@ class PDF():
 
         # Name - white
         c.setFillColorRGB(1, 1, 1)
-        c.setFont("Montserrat-SemiBold", 18)
+        c.setFont("PlusJakartaSans-SemiBold", 18)
         c.drawCentredString(PAGE_WIDTH/2.0, PAGE_HEIGHT-28, "Florian Kasper")
 
         # Subtitle - gold
         c.setFillColorRGB(242/255, 183/255, 5/255)
-        c.setFont("Montserrat-Regular", 11)
+        c.setFont("PlusJakartaSans-Regular", 11)
         c.drawCentredString(PAGE_WIDTH/2.0, PAGE_HEIGHT-44, "Software and DevOps Engineer")
 
         # Contact info - light gray
         c.setFillColorRGB(0.75, 0.75, 0.75)
-        c.setFont("Montserrat-Light", 7)
+        c.setFont("PlusJakartaSans-Light", 7)
         c.drawCentredString(45*mm, PAGE_HEIGHT-62, "info@florian-kasper.com")
         c.drawCentredString(PAGE_WIDTH/2, PAGE_HEIGHT-62, "+49 1516 7522873")
         c.drawCentredString(PAGE_WIDTH-45*mm, PAGE_HEIGHT-62, "florian-kasper.com")
 
         # Page number
         c.setFillColorRGB(0.5, 0.5, 0.5)
-        c.setFont("Montserrat-Regular", 7)
+        c.setFont("PlusJakartaSans-Regular", 7)
         c.drawCentredString(PAGE_WIDTH/2.0, 10*mm, f"{doc.page}")
 
         c.restoreState()

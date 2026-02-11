@@ -9,17 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - uses: actions/setup-python@v5
       with:
-        python-version: '3.11'
+        python-version: '3.14'
     - name: Install pipenv
       run: |
         sudo apt update
         sudo apt-get install libcairo2-dev libxt-dev
         python -m pip install --upgrade pipenv wheel
-    - run: cd gen; pipenv install;pipenv run python generator.py
+    - run: cd gen && pipenv install && pipenv run python generator.py
     - id: commit_files
       name: Commit files  
       run: |
@@ -36,17 +36,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
       - id: 'auth'
-        uses: 'google-github-actions/auth@v1'
+        uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: 'projects/699258513846/locations/global/workloadIdentityPools/github/providers/github'
           service_account: 'github-actions@homepage-397015.iam.gserviceaccount.com'
   
       - name: 'Set up Cloud SDK'
-        uses: 'google-github-actions/setup-gcloud@v1'
+        uses: 'google-github-actions/setup-gcloud@v2'
         with:
           version: '>= 363.0.0'
       - name: Build docker image
@@ -63,19 +63,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - id: 'auth'
-        uses: 'google-github-actions/auth@v1'
+        uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: 'projects/699258513846/locations/global/workloadIdentityPools/github/providers/github'
           service_account: 'github-actions@homepage-397015.iam.gserviceaccount.com'
   
       - name: 'Set up Cloud SDK'
-        uses: 'google-github-actions/setup-gcloud@v1'
+        uses: 'google-github-actions/setup-gcloud@v2'
         with:
           version: '>= 363.0.0'
       - id: 'deploy'
-        uses: 'google-github-actions/deploy-cloudrun@v1'
+        uses: 'google-github-actions/deploy-cloudrun@v2'
         with:
           service: 'homepage'
           image: 'europe-west3-docker.pkg.dev/homepage-397015/floriankaspercom/homepage:${{ github.sha }}'
