@@ -23,7 +23,7 @@ __all__=(
         'StyleSheet1',
         'getSampleStyleSheet',
         )
-from reportlab.lib.colors import black
+from reportlab.lib.colors import black, Color
 from reportlab.lib.enums import TA_LEFT, TA_CENTER, TA_RIGHT, TA_JUSTIFY
 from reportlab.lib.fonts import tt2ps
 from reportlab.rl_config import canvas_basefontname as _baseFontName, \
@@ -378,6 +378,15 @@ def getSampleStyleSheet():
                                   firstLineIndent=0,
                                   spaceBefore=3),
                    alias='bu')
+
+    stylesheet.add(ParagraphStyle(name='Tech',
+                                  parent=stylesheet['Normal'],
+                                  fontName="Montserrat-Italic",
+                                  fontSize=8,
+                                  leading=10,
+                                  textColor=Color(0.4, 0.4, 0.4),
+                                  spaceBefore=1),
+                   alias='tech')
 
     stylesheet.add(ParagraphStyle(name='Definition',
                                   parent=stylesheet['Normal'],
