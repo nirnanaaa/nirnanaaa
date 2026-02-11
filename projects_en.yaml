@@ -1,10 +1,8 @@
 introduction: |
-  Innovative Cloud-Native Developer and DevOps Engineer with extensive experience working in the design and implementation of complex IT systems.
-  Possess in-depth understanding of various system architecture and software delivery processes. Excellent project manager well-versed in engaging
-  with strategic customers to accelerate the delivery of mission-critical projects, as well as recommend best-practice architectures in accordance
-  with their long-term business objectives. Effective communicator adept at cultivating technical relationships with customers, and functioning
-  as their trusted advisor. Proven ability to apply a systematic problem-solving approach in addressing bugs, optimizing code, and automating
-  routine tasks.
+  Freelance software engineer and platform architect since 2015, focused on Go, Kubernetes and AWS.
+  I build distributed systems, internal platforms and automation tooling — typically in environments with hundreds of developers and thousands of services.
+  Most of my work sits at the intersection of backend development and infrastructure: custom Kubernetes controllers, CI/CD pipelines, cloud migrations and developer tooling.
+  I care about keeping things simple, reliable and easy to operate.
 faq_sheet:
   - title: Place of work
     values:
@@ -17,15 +15,17 @@ faq_sheet:
     - "4/1/2026 (1.4.2026)"
   - title: Competencies and Skills
     values:
-      - Development and design of scalable architectures and stacks using bleeding edge as well as well established tools and languages like Go, Kubernetes, Helm and Terraform
-      - Backend-Development using Go(lang), Typescript, Ruby, PHP
-      - Frontend-Development with React.JS
-      - Asynchronous and distributed platforms Kafka, Pub-Sub, Queues und GRPC
-      - Setup and administration of on-premise and cloud based environments using Infrastructure-as-Code (IaC) or automation tooling like Saltstack and Ansible
-      - Collaborate on Architecture and the development of microservice platforms on Bare-Metal, Kubernetes, AWS and Google Cloud Platform
+      - System architecture and technical design of distributed platforms and microservice systems
+      - Backend development in Go, Typescript, Ruby, PHP
+      - Kubernetes operators, custom controllers and CRDs
+      - Cloud infrastructure on AWS, GCP and Azure with IaC (CDK, Terraform, CloudFormation)
+      - CI/CD pipelines, container orchestration and platform engineering
+      - Distributed systems with gRPC, Kafka and async messaging
+      - On-premise and bare-metal Kubernetes clusters
+      - Frontend development with React.JS
   - title: Industry Know-How
     values:
-      - Tech, Online Retail, Utilities, Sports, Industrials, Defense, Marketing
+      - Finance, Healthcare, Utilities, Manufacturing, E-Commerce, Defense, Marketing
   - title: Previous Responsibilities
     values:
       - Software Architect / Software Developer / Dev-Ops / Platform Engineering
@@ -93,9 +93,12 @@ history:
     shortSummary: Design and Development of a Multi-Stage, Workflow based Data Processing Pipeline
     invertedSortingWeight: 1
     key_points:
-    - Design and Development of a Multi-Stage, Workflow based Data Processing Pipeline for moving around large amounts of files inside and outside the company
-    - By using multiple, independent adapters, we managed to allow our client to add in new datasources or targets on demand
-    - By using filters and middleware processors, we managed to route and process the incoming files according to the clients demands
+    - Built a Kubernetes-native file integration platform in Go, distributed across core services and remote agents, processing around 10,000 jobs per minute
+    - Workflow engine based on a state machine with retry, cancellation and flow control between core and agents
+    - Pluggable protocol adapters for SFTP, SMTP and local filesystems — new sources or targets plug in without touching the core
+    - gRPC middleware chain for filtering, selective compression, PDF conversion, tokenization and templating
+    - PostgreSQL-backed job queue with stream-based S3 file transfer for reliable delivery under failure
+    - Kubernetes CRDs and controllers for workflow management, RBAC with multi-tenancy and enterprise auth via LDAP, OIDC and SAML
   - client: Teleson AG
     industry: Marketing
     role: Dev-Ops and Platform-Engineer
@@ -107,10 +110,10 @@ history:
     shortSummary: AWS Cloud Migration and implementation of AWS best practice patterns
     invertedSortingWeight: 1
     key_points:
-    - By implementing unix level automation, on premise and on AWS, we were able to reduce the downtime during incidents and improve the deployment time of all company owned servers.
-    - By changing the deployment method from manually provisioned servers and infrastructure to industry best practices (Infrastructure as Code - via CDK) I was able to increase the reliability and boost team confidence when deploying code changes
-    - By implementing a CI/CD deployment system on GitHub Actions we were able to reduce the amount of interactions that admins had to go through during deployment
-    - By introducing the company to containerized architecture (i.e. Kubernetes or more precise EKS) and deployments, we could reduce the time to deploy and deploy applications in isolation. Deployment times changed from around 30min for a full EC2 instance rebuild to less than 2min.
+    - Built a Go-based automation infrastructure for on-premise and AWS environments to address frequent incident downtime, reducing recovery time and providing full visibility into all deployed services
+    - Migrated manually provisioned servers and infrastructure to Industry best practices (Infrastructure as Code via CDK), increasing deployment reliability and boosting team confidence in production changes
+    - Introduced CI/CD pipelines on GitHub Actions to eliminate manual deployment steps, reducing the number of required admin interactions per deployment to near zero
+    - Led the adoption of containerized architecture on EKS to replace slow EC2 instance rebuilds, cutting deployment time from over 30 minutes to under 2 minutes
   - client: Juratherm GmbH
     tech: Kubernetes, AWS, Ansible, CUPS, Slack, CSI
     industry: Industrials
@@ -122,9 +125,9 @@ history:
     clientLogo: /clients/Logo_Juratherm.svg
     shortSummary: IoT Devices, AWS Account Management and Manufacturing Automation
     key_points:
-      - Concept and implementation of the companies runtime infrastructure, account and runtime security on AWS, including the migration of critical infrastructure during runtime by leveraging modern Infrastructure as Code techniques (CDK, Cloudformation).
-      - Design and Develop microservice authentication patterns using OAuth/OpenID Connect and SAML in Go using Smartcards/Yubikeys in Go
-      - Development of a distributed, GRPC based printspooler and server in Go
+      - Designed and executed a zero-downtime migration of the company's critical on-premise infrastructure to AWS using CDK and CloudFormation, establishing a fully codified and reproducible cloud environment
+      - Developed a distributed, GRPC-based print spooler and server in Go to automate manufacturing label printing, replacing a fragile manual process
+      - Implemented microservice authentication using Smartcards and Yubikeys with OAuth/OpenID Connect in Go, securing access across distributed services
 
   - client: EnBW AG
     industry: Utilities
@@ -137,10 +140,10 @@ history:
     shortSummary: Kubernetes On-Premise Infrastructure and OS patch automation tooling
     invertedSortingWeight: 1
     key_points:
-      - Design and develop a distributed, grpc based system in go to automatically update all linux servers in the companies backend networks in regular intervals.
-      - Develop a headless (automated) saltstack-based command execution engine in go, which can run commands on remote servers securely.
-      - With custom-built go tooling, a bare-metal kubernetes cluster could be deployed in under 2 minutes compared to the previous time of 30 minutes when using kubespray. The kubernetes components are deployed in an existing kubernetes cluster, once per sub-cluster.
-      - Design and configure runtime security software for intrusion- and attack vector detection during the runtime of a linux process within kubernetes.
+      - Designed and developed a distributed, GRPC-based patch management system in Go to automatically update all Linux servers across the company's backend networks, replacing a previously manual and error-prone process
+      - Built a headless Saltstack-based command execution engine in Go, enabling secure and auditable remote command execution across hundreds of servers
+      - Reduced bare-metal Kubernetes cluster provisioning time from 30 minutes (kubespray) to under 2 minutes by developing custom Go tooling deployed within an existing management cluster
+      - Configured Palo Alto Prisma runtime security for intrusion and attack vector detection within Kubernetes workloads, strengthening the company's security posture for containerized environments
   - client: Scout24 AG
     industry: Online
     role: Software Developer and Dev-Ops
@@ -152,9 +155,9 @@ history:
     shortSummary: Company-wide hosting platform for microservices and AWS account migration
     invertedSortingWeight: 1
     key_points:
-      - Built kubernetes custom resources and controllers in go, which offer a single, standardized interface for metrics, alerts, automatic scaling and user-facing communication endpoints for internal developers. This decreased the deployment time from an average of 15 minutes to a mere 3 minutes and unrecoverable deployment failures, from an average of 1% to below 0.1%.
-      - Built automatic backup and restore pipelines for 5 clusters using velero. By building a custom UI, this process wraps the velero custom resources and allows for services to be moved across clusters in under 1 minute, well within the 1 hour RTO.
-      - During the process of an organizational carve-out, that I participated in - 150 services (of the back then 600 services) were moved - without downtime - into new organizational structures. Services were including relational databases, AWS account resources, kubernetes controllers and service deployment resources.
+      - Built Kubernetes custom resources and controllers in Go to provide a standardized interface for metrics, alerts, and autoscaling for internal developers, reducing average deployment time from 15 to 3 minutes and unrecoverable deployment failures from 1% to below 0.1%
+      - Implemented automated backup and restore pipelines for 5 Kubernetes clusters using Velero with a custom UI, enabling cross-cluster service migration in under 1 minute — well within the 1-hour RTO requirement
+      - Executed a zero-downtime organizational carve-out, migrating 150 of 600 services — including relational databases, AWS account resources, and Kubernetes workloads — into new organizational structures without service interruption
   - client: Klingel K - Mail Order GmbH & Co. KG
     industry: Online Retailer
     role: Dev-Ops
@@ -166,9 +169,9 @@ history:
     shortSummary: Interim System Management and establishing a new Observability pipeline in an on-premise Environment.
     invertedSortingWeight: 2
     key_points:
-      - Interim System Administration of the return departments applications using Ansible, Ubuntu and Kubernetes
-      - Service migration of Nexus, EFK/ELK and Monitoring solutions to a new in-house hosting solution
-      - Reliability improvements and establishing automated backups for the in-house hosted databases
+      - Took over interim system administration of the returns department's application stack using Ansible, Ubuntu, and Kubernetes, ensuring operational continuity during a staffing gap
+      - Migrated Nexus, EFK/ELK, and monitoring solutions between in-house data centers with minimal disruption, establishing a modernized observability pipeline
+      - Implemented automated backup strategies for in-house hosted PostgreSQL databases, closing a critical gap in data protection
   - client: ADB Safegate
     industry: Manufacturing
     role: Site Reliability Engineer
@@ -180,8 +183,8 @@ history:
     clientLogo: /clients/adbsg.png
     shortSummary: Kubernetes-based Application Edge deployments and infrastructure
     key_points:
-    - "Designed and enhanced a standardized helmfile-based deployment pipeline for quickly deploying kubernetes clusters with a standardized setup across different environments, platforms and infrastructure"
-    - "Support and guide the in-house development team with kubernetes training and scalable and fault-tolerant architecture patterns"
+    - Designed and led development of a standardized Helmfile-based deployment pipeline, enabling reproducible and offline-capable Kubernetes cluster provisioning across heterogeneous edge environments
+    - Trained and mentored the in-house development team on Kubernetes operations and fault-tolerant architecture patterns, accelerating the team's ability to independently manage production workloads
 
   - client: IONOS SE
     industry: Online
@@ -193,7 +196,7 @@ history:
     clientLogo: /clients/ionos.png
     shortSummary: In-Hose on-premise Kubernetes Cloud Offering and automation tooling
     key_points:
-      - Help to build and maintain a Kubernetes PaaS offering for > 10000 customers. Tooling is fully written in go and automatically tested using CI and build pipelines
+      - Contributed to building and maintaining a Kubernetes PaaS serving over 10,000 customers, developing and validating all Go-based tooling through automated CI pipelines
   - client: AMAN Media GmbH
     start: 08/2020
     end: "09/2021"
@@ -204,9 +207,9 @@ history:
     clientLogo: /clients/aman.png
     shortSummary: Cloud Architecture and implementation of scalable webshops
     key_points:
-      - Develop an architecture for scaling a PHP web application and asynchronous backend tasks
-      - Introduce Infrastructure-as-Code (IaC) to the developers and build automated CI deployment pipelines and infrastructure in Jenkins
-      - Introduce and establish Opsgenie for alert routing and triage and connect it to the production environment
+      - Architected a scalable AWS hosting solution for a PHP web application with asynchronous background task processing, enabling the platform to handle growing traffic without manual intervention
+      - Introduced Infrastructure as Code and automated Jenkins deployment pipelines, enabling developer self-service deployments and eliminating manual provisioning steps
+      - Established Opsgenie-based on-call alerting integrated with the production environment, reducing incident response time through structured alert routing and triage
   - client: Baxter International
     role: Dev-Ops / SRE
     industry: Healthcare
@@ -218,10 +221,10 @@ history:
     clientLogo: /clients/baxter.png
     shortSummary: Role Based Access Control Policies and Kubernetes Infrastructure
     key_points:
-      - Established reliable operation of 3 - AKS - kubernetes clusters in a development team of 400 developers, previously only accustomed to on premise deployments.
-      - Migrated 25 java-based apps to containers, automated github workflows and helm deployments for lifecycle management. This decreased the lead and deploy time for software changes from multiple hours to a maximum of 5 minutes.
-      - Migrated the company’s source code management system with 230 repositories from Bitbucket to GitHub enterprise. Strengthened security through the use of SAML, 2-factor authentication and SCIM based user provisioning.
-      - Created tools in go and typescript for engineering managers to self manage their team members and to enable role based access control for each of these applications within Azure AD.
+      - Established reliable operations for 3 AKS Kubernetes clusters supporting 400 developers transitioning from on-premise deployments, creating standardized workflows and runbooks for the new platform
+      - Containerized 25 Java-based applications and automated GitHub workflows with Helm-based lifecycle management, reducing lead and deploy time for software changes from multiple hours to under 5 minutes
+      - Migrated the company's source code management system (230 repositories, 400 users) from Bitbucket to GitHub Enterprise, implementing SAML, 2-factor authentication, and SCIM-based user provisioning to strengthen security
+      - Built self-service tools in Go and TypeScript enabling engineering managers to manage team membership and role-based access control within Azure AD, eliminating manual IT tickets for access changes
   - client: AutoScout24 GmbH
     start: 11/2019
     end: 04/2020
@@ -229,7 +232,7 @@ history:
     clientLogo: /clients/as24.jpg
     shortSummary: Offer management for car dealerships
     key_points:
-      - Develop a React.JS based frontend using Typescript for an online car selling platform, where car dealers can view and manage their active listings and see their performance numbers
+      - Developed a React.JS/TypeScript frontend for an online car selling platform, enabling car dealers to manage their active listings and monitor performance metrics in real time
     tech: React.JS, AWS, Golang
     industry: Online
     role: Software Developer
@@ -244,11 +247,11 @@ history:
     clientLogo: /clients/logo_kleinesR.svg
     shortSummary: On-Premise Kubernetes Setup, Cloud Collaboration Suite and Online Password Manager
     key_points:
-      - Develop an office-suite-like (Excel, Word) solution frontend for small-to-medium-sized businesses using React.JS and Typescript
-      - Concept and Development of a Google-Drive like storage service. Frontend is written in React.JS, backend in Go
-      - Concept, Development of a thumbnail generator in go. Storage is based on AWS S3. Multiple, asynchronous processing pipelines and fan-out worker patterns
-      - Concept and Architectural-Design as well as Development of a web-based password manager
-      - Concept and Realisation of a Hosting and CI infrastructure on-premise using kubernetes. Automation using ansible
+      - Developed an office-suite-like collaboration frontend (Excel, Word) for small-to-medium-sized businesses using React.JS and TypeScript, providing a browser-based alternative to desktop productivity tools
+      - Built a Google-Drive-like cloud storage service with a React.JS frontend and Go backend, supporting real-time file management and sharing
+      - Designed and implemented a thumbnail generator in Go with S3-based storage, leveraging asynchronous fan-out worker pipelines for high-throughput image processing
+      - Architected and developed a web-based password manager using React.JS, Go, and WebAssembly, enabling client-side encryption for secure credential storage
+      - Built on-premise Kubernetes hosting and CI infrastructure with Ansible-based automation, providing the team with a self-managed deployment platform
   - client: seven point.media GmbH & Co. KG
     industry: Health
     start: 03/2016
@@ -259,8 +262,8 @@ history:
     clientLogo: /clients/sevenpoint.png
     shortSummary: Membership and Device Management for EMS-based training
     key_points:
-      - Aid in the development of fitness center management software, which is used by 600 clients in 10 countries. Development of the backend happened in PHP, whilst the frontend was React.JS based
-      - Build and maintain a platform product on AWS/EKS for enabling developers easy build and deploy to their PHP app in < 5min
+      - Co-developed fitness center management software used by 600 clients across 10 countries, building the PHP backend and React.JS frontend for membership and device management
+      - Built and maintained an AWS/EKS platform product enabling developers to build and deploy PHP applications in under 5 minutes through self-service pipelines
   - client: ERAMON GmbH
     industry: Industry Supply
     role: Consultant and React Coach
@@ -269,8 +272,8 @@ history:
     tech: React, Webpack, Node.JS, Sass
     invertedSortingWeight: -1
     key_points:
-      - Coach developers on React
-      - Integrating React into the company's legacy software platform
+      - Coached internal developers on React.JS adoption and modern frontend best practices, enabling the team to independently build and maintain React components
+      - Integrated React components into the company's legacy software platform, modernizing the user experience without requiring a full rewrite
   - client: VATC Technologies Inc.
     industry: Defense
     start: 03/2015
@@ -280,8 +283,8 @@ history:
     clientLogo: /clients/vatc.jpeg
     shortSummary: Modern-Age Exercise Planning and Monitoring
     key_points:
-      - Design and architecture of a platform for secure storage and analysis of biometric data sets (fingerprints, iris, PII) using Ruby on Rails in the backend and React.JS in the frontend, hosted on AWS
-      - Design and architecture of a platform for automated aggregation and evaluation of activities in social networks. This process made use a mixed set of web scrapers, twitter firehose and other publicly available data, written in Ruby, which pumped their data into kafka and further into cassandra, where they could be adjusted by an exercise operator to include relevant information for an analyst to identify.
+      - Designed and built a platform for secure storage and analysis of biometric data (fingerprints, iris, PII) using Ruby on Rails and React.JS on AWS, meeting strict security requirements for sensitive data handling
+      - Architected a social network intelligence aggregation platform using web scrapers, Twitter Firehose, and Kafka pipelines feeding into Cassandra, enabling exercise operators to inject training scenarios and analysts to practice identification workflows
     tech: React, Node.JS, Apache, Ruby on Rails, PHP, Docker, Linux, AWS, Elasticsearch, Cassandra, ArcGIS
   - client: Corscience GmbH & Co. KG
     industry: Healthcare
@@ -291,9 +294,9 @@ history:
     tech: Debian Linux, Ansible, Docker, VMware, Ruby on Rails, React
     invertedSortingWeight: -1
     key_points:
-      - Care, maintenance and servicing of the company's internal debian based server landscape. Automation was done using Puppet and Ansible
-      - Design and development of in-house software applications using mostly Ruby on Rails and Docker
-      - Consolidate 20 in-house web services into a docker based hosting platform to reduce total overhead on hosting and infrastructure maintenance
+      - Administered and automated the company's Debian-based server landscape using Puppet and Ansible, reducing manual maintenance effort and improving consistency across environments
+      - Developed in-house software applications using Ruby on Rails and Docker, delivering internal tools to streamline business operations
+      - Consolidated 20 web services into a Docker-based hosting platform, reducing total infrastructure overhead and simplifying deployment workflows
   - client: XPANDMMI
     industry: Online
     start: 01/2015
@@ -301,7 +304,7 @@ history:
     end: 03/2015
     invertedSortingWeight: -1
     key_points:
-      - Development of various platform modules for a CMS system
+      - Developed various platform modules for a CMS system in PHP and Ruby on Rails, extending the platform's functionality for client-specific requirements
     tech: PHP, Apache, MySQL, Ruby on Rails
   - client: Jacor Online Marketing
     industry: Online
@@ -311,4 +314,4 @@ history:
     tech: PHP, React
     invertedSortingWeight: -1
     key_points:
-      - Development of an application to evaluate images and rate them
+      - Designed and developed an image evaluation and rating application in PHP and React, enabling users to upload, review, and score visual content
