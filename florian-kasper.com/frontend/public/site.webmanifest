@@ -1,0 +1,14 @@
+{
+  "name": "Florian Kasper",
+  "short_name": "FK",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#131626",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

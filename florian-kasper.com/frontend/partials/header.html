@@ -1,0 +1,85 @@
+<header class="pointer-events-none relative z-50 flex flex-col" style="height: var(--header-height); margin-bottom: var(--header-mb);"{{#if isHome}} data-homepage{{/if}}>
+  {{#if isHome}}
+  <div id="avatar-spacer" class="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"></div>
+  <div class="sm:px-8 top-0 order-last -mb-3 pt-3" style="position: var(--header-position);">
+    <div class="mx-auto max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <div class="top-[var(--avatar-top,theme(spacing.3))] w-full" style="position: var(--header-inner-position);">
+            <div class="relative">
+              <div class="absolute left-0 top-3 origin-left transition-opacity h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur" style="opacity: var(--avatar-border-opacity, 0); transform: var(--avatar-border-transform);"></div>
+              <a href="{{prefix}}/" aria-label="{{i18n.nav.home}}" class="pointer-events-auto block h-16 w-16 origin-left" style="transform: var(--avatar-image-transform);">
+                <img src="/images/avatar.jpg" alt="Florian Kasper" width="64" height="64" class="rounded-full bg-zinc-100 object-cover h-16 w-16">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+  <div id="header-ref" class="top-0 z-10 h-16 pt-6" style="position: var(--header-position);">
+    <div class="sm:px-8">
+      <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="relative px-4 sm:px-8 lg:px-12" style="position: var(--header-inner-position); top: var(--header-top, theme(spacing.6));">
+          <div class="mx-auto max-w-2xl lg:max-w-5xl">
+            <div class="relative flex gap-4">
+              <div class="flex flex-1">
+                {{#unless isHome}}
+                <div class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+                  <a href="{{prefix}}/" aria-label="{{i18n.nav.home}}" class="pointer-events-auto">
+                    <img src="/images/avatar.jpg" alt="Florian Kasper" width="36" height="36" class="rounded-full bg-zinc-100 object-cover h-9 w-9">
+                  </a>
+                </div>
+                {{/unless}}
+              </div>
+              <div class="flex flex-1 justify-end md:justify-center">
+                <!-- Mobile nav trigger -->
+                <div class="pointer-events-auto md:hidden">
+                  <button id="mobile-nav-open" type="button" class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+                    {{i18n.nav.menu}}
+                    <svg viewBox="0 0 8 6" aria-hidden="true" class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700"><path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </button>
+                </div>
+                <!-- Desktop nav -->
+                <nav class="pointer-events-auto hidden md:block">
+                  <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+                    <li><a href="{{prefix}}/" class="nav-link relative block px-3 py-2 transition hover:text-teal-500" data-path="{{prefix}}/">{{i18n.nav.home}}</a></li>
+                    <li><a href="{{prefix}}/about" class="nav-link relative block px-3 py-2 transition hover:text-teal-500" data-path="{{prefix}}/about">{{i18n.nav.about}}</a></li>
+                    <li><a href="{{prefix}}/clients" class="nav-link relative block px-3 py-2 transition hover:text-teal-500" data-path="{{prefix}}/clients">{{i18n.nav.clients}}</a></li>
+                    <li><a href="{{prefix}}/uses" class="nav-link relative block px-3 py-2 transition hover:text-teal-500" data-path="{{prefix}}/uses">{{i18n.nav.uses}}</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="flex justify-end md:flex-1">
+                <a href="{{altPath}}" hreflang="{{i18n.altLang}}" rel="alternate" class="pointer-events-auto flex items-center rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium text-zinc-600 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur hover:text-teal-500 transition">
+                  {{i18n.altLangName}}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{#if isHome}}<div style="height: var(--content-offset);"></div>{{/if}}
+
+<!-- Mobile nav overlay -->
+<div id="mobile-nav-overlay" class="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm hidden" aria-hidden="true"></div>
+<div id="mobile-nav-panel" class="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 hidden">
+  <div class="flex flex-row-reverse items-center justify-between">
+    <button id="mobile-nav-close" aria-label="Close menu" class="-m-1 p-1">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 text-zinc-500"><path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </button>
+    <h2 class="text-sm font-medium text-zinc-600">{{i18n.nav.navigation}}</h2>
+  </div>
+  <nav class="mt-6">
+    <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800">
+      <li><a href="{{prefix}}/" class="block py-2">{{i18n.nav.home}}</a></li>
+      <li><a href="{{prefix}}/about" class="block py-2">{{i18n.nav.about}}</a></li>
+      <li><a href="{{prefix}}/clients" class="block py-2">{{i18n.nav.clients}}</a></li>
+      <li><a href="{{prefix}}/uses" class="block py-2">{{i18n.nav.uses}}</a></li>
+    </ul>
+  </nav>
+</div>

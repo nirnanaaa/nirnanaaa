@@ -41,3 +41,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+florian-kasper.com/frontend/node_modules/
+florian-kasper.com/cmd/server/dist/
+florian-kasper.com/dist/

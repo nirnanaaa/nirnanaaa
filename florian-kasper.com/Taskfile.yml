@@ -1,0 +1,87 @@
+version: '3'
+
+tasks:
+  dev:
+    desc: Run Vite dev server
+    dir: frontend
+    cmd: npx vite
+
+  build:
+    desc: Build Go binary with embedded dist
+    deps: [frontend:build]
+    cmd: CGO_ENABLED=0 go build -o bin/server ./cmd/server
+
+  test:
+    desc: Run tests
+    cmd: go test ./...
+
+  frontend:install:
+    desc: Install frontend dependencies
+    dir: frontend
+    cmd: npm install
+
+  frontend:build:
+    desc: Build frontend with Vite (both locales)
+    dir: frontend
+    cmds:
+      - LOCALE=en npx vite build
+      - LOCALE=de npx vite build
+      - node generate-sitemap.js
+
+  docker:
+    desc: Build Docker image
+    cmd: docker build -t florian-kasper-com .
+
+  serve:
+    desc: Run Go server locally
+    deps: [build]
+    cmd: ./bin/server
+    env:
+      PORT: '{{.PORT | default "8080"}}'
+
+  frontend:dev:
+    desc: Run Vite dev server with HMR
+    dir: frontend
+    cmd: npx vite
+
+  verify:
+    desc: Verify server responses (run with server already up)
+    cmds:
+      - echo "--- EN HTML pages ---"
+      - curl -sf http://localhost:${PORT:-8080}/ | head -5
+      - curl -sf http://localhost:${PORT:-8080}/about | head -5
+      - curl -sf http://localhost:${PORT:-8080}/clients | head -5
+      - curl -sf http://localhost:${PORT:-8080}/uses | head -5
+      - curl -sf http://localhost:${PORT:-8080}/privacy | head -5
+      - echo "--- DE HTML pages ---"
+      - curl -sf http://localhost:${PORT:-8080}/de/ | head -5
+      - curl -sf http://localhost:${PORT:-8080}/de/about | head -5
+      - curl -sf http://localhost:${PORT:-8080}/de/clients | head -5
+      - curl -sf http://localhost:${PORT:-8080}/de/uses | head -5
+      - curl -sf http://localhost:${PORT:-8080}/de/privacy | head -5
+      - echo "--- SEO files ---"
+      - curl -sf http://localhost:${PORT:-8080}/robots.txt
+      - curl -sf http://localhost:${PORT:-8080}/sitemap.xml | head -20
+      - echo "--- Redirects ---"
+      - curl -sI http://localhost:${PORT:-8080}/about/ | head -3
+      - curl -sI http://localhost:${PORT:-8080}/de/about/ | head -3
+      - curl -sI http://localhost:${PORT:-8080}/CV.pdf | head -3
+      - echo "--- Accept-Language ---"
+      - 'curl -sI -H "Accept-Language: de" http://localhost:${PORT:-8080}/ | head -3'
+      - 'curl -sI -H "Accept-Language: en" http://localhost:${PORT:-8080}/ | head -3'
+      - echo "--- Headers ---"
+      - curl -sI http://localhost:${PORT:-8080}/ | grep -iE 'cache-control|x-content-type|x-frame|referrer|vary'
+      - echo "--- Gzip ---"
+      - 'curl -sI -H "Accept-Encoding: gzip" http://localhost:${PORT:-8080}/ | grep -i content-encoding'
+      - echo "--- 404 ---"
+      - 'curl -so /dev/null -w "%{http_code}" http://localhost:${PORT:-8080}/nonexistent'
+      - echo ""
+      - 'curl -so /dev/null -w "%{http_code}" http://localhost:${PORT:-8080}/de/nonexistent'
+      - echo ""
+      - echo "--- All checks passed ---"
+
+  clean:
+    desc: Remove build artifacts
+    cmds:
+      - rm -rf bin/ cmd/server/dist/
+      - rm -rf frontend/node_modules

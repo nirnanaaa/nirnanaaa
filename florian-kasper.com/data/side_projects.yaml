@@ -1,0 +1,26 @@
+# Side projects — uncomment entries and remove "hidden" class from
+# the homepage section when ready to publish.
+#
+# Each entry needs: title, category, description.
+# Optional: image (path in /images/projects/), date (YYYY-MM-DD).
+#
+# Example:
+# - title: Walnut Desk Build
+#   category: Woodworking
+#   description: A standing desk from rough walnut slabs with hand-cut dovetail joints and an epoxy river channel.
+#   image: /images/projects/walnut-desk.jpg
+#   date: "2025-12-15"
+#
+# - title: ESP32 Sensor Board
+#   category: Custom PCBs
+#   description: A custom 4-layer PCB with ESP32-S3, BME680 environmental sensor and LoRa transceiver for remote monitoring.
+#   image: /images/projects/esp32-sensor.jpg
+#   date: "2025-11-01"
+#
+# - title: Prusa Firmware Mod
+#   category: Firmware Hacking
+#   description: Modified Prusa MK4 firmware to add custom G-code macros for automated filament swaps during multi-material prints.
+#   image: /images/projects/prusa-mod.jpg
+#   date: "2025-10-20"
+
+projects: []

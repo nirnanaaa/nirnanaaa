@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body class="font-sans antialiased">
+  <div class="fixed inset-0 flex justify-center sm:px-8">
+    <div class="flex w-full max-w-7xl lg:px-8">
+      <div class="w-full bg-white ring-1 ring-zinc-100"></div>
+    </div>
+  </div>
+
+  <div class="relative">
+    {{> header}}
+    <main>
+      <div class="sm:px-8 mt-16 sm:mt-32 my-10">
+        <div class="mx-auto max-w-7xl lg:px-8">
+          <div class="relative px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+              <div class="prose prose-zinc max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-teal-500 hover:prose-a:text-teal-600">
+                {{{privacy}}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {{> footer}}
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

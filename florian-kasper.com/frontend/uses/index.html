@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body class="font-sans antialiased">
+  <div class="fixed inset-0 flex justify-center sm:px-8">
+    <div class="flex w-full max-w-7xl lg:px-8">
+      <div class="w-full bg-white ring-1 ring-zinc-100"></div>
+    </div>
+  </div>
+
+  <div class="relative">
+    {{> header}}
+    <main>
+      <div class="sm:px-8 mt-16 sm:mt-32 my-10">
+        <div class="mx-auto max-w-7xl lg:px-8">
+          <div class="relative px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+              <header class="max-w-2xl">
+                <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
+                  {{i18n.uses.heading}}
+                </h1>
+                <p class="mt-6 text-base text-zinc-600">
+                  {{i18n.uses.description}}
+                </p>
+              </header>
+              <div class="mt-16 sm:mt-20">
+                <div class="space-y-20">
+                  <!-- Workstation -->
+                  <section aria-labelledby="workstation-heading" class="md:border-l md:border-zinc-100 md:pl-6">
+                    <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                      <h2 id="workstation-heading" class="text-sm font-semibold text-zinc-800">{{i18n.uses.workstation}}</h2>
+                      <div class="md:col-span-3">
+                        <ul role="list" class="space-y-16">
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">MacBook Pro, M4 Max, 64GB RAM</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Runs multiple Kubernetes clusters via kind, compiles Go projects instantly, and handles everything from Docker builds to video calls without throttling.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">ZSA Voyager</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Split ergonomic keyboard with columnar stagger. Custom layers for coding, navigation and window management. Portable enough to take everywhere.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Apple Magic Trackpad</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Three-finger swipe between desktops is the fastest way to switch context between terminal, browser and editor.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- Editor & Terminal -->
+                  <section aria-labelledby="editor-heading" class="md:border-l md:border-zinc-100 md:pl-6">
+                    <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                      <h2 id="editor-heading" class="text-sm font-semibold text-zinc-800">{{{i18n.uses.editorTerminal}}}</h2>
+                      <div class="md:col-span-3">
+                        <ul role="list" class="space-y-16">
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Helix</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Modal editor with built-in LSP support and tree-sitter. No plugins to manage, gopls integration works out of the box. Selection-first editing model beats Vim's verb-noun approach for refactoring.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Warp + zsh</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Block-based terminal with built-in command grouping. Split panes for running the dev server, tests and git operations side by side.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- Languages & Frameworks -->
+                  <section aria-labelledby="languages-heading" class="md:border-l md:border-zinc-100 md:pl-6">
+                    <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                      <h2 id="languages-heading" class="text-sm font-semibold text-zinc-800">{{{i18n.uses.languagesFrameworks}}}</h2>
+                      <div class="md:col-span-3">
+                        <ul role="list" class="space-y-16">
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Go</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Primary language for everything backend: HTTP services, Kubernetes controllers, CLI tools, gRPC services. Stdlib first, dependencies only when they earn their place.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">TypeScript / React</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">For frontends and internal dashboards. Next.js or Vite depending on whether SSR matters. Tailwind CSS for styling.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Ruby / Rails</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Years of production Rails experience — biometric data platforms, internal tooling, CMS modules. Still the fastest way to prototype a full-stack app.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">PHP</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Built hosting platforms, fitness management software and CMS systems. Platform work on AWS/EKS enabling self-service PHP deployments.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Python</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Scripting, automation and document generation. Quick prototyping when Go would be overkill.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- Infrastructure -->
+                  <section aria-labelledby="infra-heading" class="md:border-l md:border-zinc-100 md:pl-6">
+                    <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                      <h2 id="infra-heading" class="text-sm font-semibold text-zinc-800">{{i18n.uses.infrastructure}}</h2>
+                      <div class="md:col-span-3">
+                        <ul role="list" class="space-y-16">
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Kubernetes</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Custom controllers with Kubebuilder, CRDs for workflow management, bare-metal and cloud clusters. On-premise with CRI-O, cloud on EKS and AKS.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">AWS / GCP / Azure</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">AWS is the default. CDK and CloudFormation for IaC, EKS for compute, S3 for storage. GCP for specific workloads. Azure when the client requires it.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Terraform / CDK</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Terraform for multi-cloud and shared modules. AWS CDK when staying within the AWS ecosystem and wanting type-safe constructs.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">GitHub Actions</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">CI/CD for everything. Container builds, Go tests with Ginkgo, infrastructure deployments, CV generation. Self-hosted runners when builds need cluster access.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- Dev tooling -->
+                  <section aria-labelledby="devtools-heading" class="md:border-l md:border-zinc-100 md:pl-6">
+                    <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                      <h2 id="devtools-heading" class="text-sm font-semibold text-zinc-800">{{i18n.uses.devTooling}}</h2>
+                      <div class="md:col-span-3">
+                        <ul role="list" class="space-y-16">
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Taskfile</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">YAML-based task runner. Replaces Makefiles without the arcane syntax. Every project gets a Taskfile with build, test, dev and deploy targets.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Ginkgo / Gomega</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">BDD-style Go test framework. Table-driven tests with DescribeTable, async assertions with Eventually, and real fixtures instead of mocks.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">gopls</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Go language server. Symbol navigation, diagnostics, references and rename across the entire workspace. Pairs with Helix for a lightweight but capable Go IDE.</p>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="text-base font-semibold tracking-tight text-zinc-800">Docker / kind</h3>
+                            <p class="relative z-10 mt-2 text-sm text-zinc-600">Local Kubernetes clusters with kind for controller development. Multi-stage Docker builds for minimal production images — this site runs on a 15MB distroless container.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                {{> resume}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {{> footer}}
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

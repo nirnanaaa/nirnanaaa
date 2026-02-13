@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body class="font-sans antialiased">
+  <div class="fixed inset-0 flex justify-center sm:px-8">
+    <div class="flex w-full max-w-7xl lg:px-8">
+      <div class="w-full bg-white ring-1 ring-zinc-100"></div>
+    </div>
+  </div>
+
+  <div class="relative">
+    {{> header}}
+    <main>
+      <div class="sm:px-8 mt-16 sm:mt-32 my-10">
+        <div class="mx-auto max-w-7xl lg:px-8">
+          <div class="relative px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+              <header class="max-w-2xl">
+                <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
+                  {{i18n.projects.heading}}
+                </h1>
+                <p class="mt-6 text-base text-zinc-600">
+                  {{i18n.projects.description}}
+                </p>
+              </header>
+              <div class="mt-16 sm:mt-20">
+                {{#if sideProjects.length}}
+                <div class="grid grid-cols-1 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 gap-x-8">
+                  {{#each sideProjects}}
+                  <article class="group relative flex flex-col items-start">
+                    {{#if image}}
+                    <div class="relative w-full overflow-hidden rounded-2xl">
+                      <img src="{{image}}" alt="{{title}}" width="600" height="400" loading="lazy" class="aspect-[3/2] w-full object-cover transition group-hover:scale-105">
+                    </div>
+                    {{/if}}
+                    <div class="mt-4">
+                      <span class="text-xs font-medium uppercase tracking-wide text-teal-600">{{category}}</span>
+                      <h2 class="mt-1 text-base font-semibold tracking-tight text-zinc-800">{{title}}</h2>
+                      <p class="mt-2 text-sm text-zinc-600">{{description}}</p>
+                    </div>
+                    {{#if date}}
+                    <time datetime="{{date}}" class="mt-3 text-xs text-zinc-400">{{date}}</time>
+                    {{/if}}
+                  </article>
+                  {{/each}}
+                </div>
+                {{else}}
+                <p class="text-base text-zinc-500">{{i18n.projects.empty}}</p>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {{> footer}}
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

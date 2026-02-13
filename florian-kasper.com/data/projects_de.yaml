@@ -1,0 +1,317 @@
+introduction: |
+  Freiberuflicher Software-Entwickler und Plattform-Architekt seit 2015 mit Schwerpunkt auf Go, Kubernetes und AWS.
+  Ich entwickle verteilte Systeme, interne Plattformen und Automatisierungsloesungen — ueberwiegend in Umgebungen mit mehreren Hundert Entwicklern und Tausenden von Services.
+  Meine Arbeit bewegt sich an der Schnittstelle von Backend-Entwicklung und Infrastruktur: eigene Kubernetes-Controller, CI/CD-Pipelines, Cloud-Migrationen und Werkzeuge fuer Entwicklerteams.
+  Einfachheit, Zuverlaessigkeit und Wartbarkeit stehen bei mir an erster Stelle.
+faq_sheet:
+  - title: Taetigkeitsbereich
+    values:
+    - "Deutschland – Bevorzugt: Sueddeutschland, Oesterreich oder Remote"
+  - title: Sprachkenntnisse
+    values:
+    - Englisch und Deutsch
+  - title: Verfuegbarkeit
+    values:
+    - "01.04.2026"
+  - title: Kompetenzen und Faehigkeiten
+    values:
+      - Systemarchitektur und technisches Design verteilter Plattformen und Microservice-Systeme
+      - Backend-Entwicklung in Go, Typescript, Ruby, PHP
+      - Kubernetes Operatoren, eigene Controller und CRDs
+      - Cloud-Infrastruktur auf AWS, GCP und Azure mit IaC (CDK, Terraform, CloudFormation)
+      - CI/CD-Pipelines, Container-Orchestrierung und Platform Engineering
+      - Verteilte Systeme mit gRPC, Kafka und asynchroner Kommunikation
+      - On-Premise- und Bare-Metal-Kubernetes-Cluster
+      - Frontend-Entwicklung mit React.JS
+  - title: Industriewissen
+    values:
+      - Finanz, Gesundheitswesen, Energieversorger, Fertigung, E-Commerce, Ruestung, Marketing
+  - title: Vorige Projektrollen
+    values:
+      - Software Architect / Software Developer / Dev-Ops / Platform Engineering
+  - title: Ausbildung
+    values:
+      - bis 2011 staatl. Realschule Höchstadt a.d. Aisch
+      - bis 2014 staatl. Berufsschule Erlangen
+  - title: Zertifizierungen
+    values:
+      - AWS Certified Solutions Architect - Associate (SAA)
+
+knowledge_graph:
+  - title: "Programmiersprachen"
+    values:
+    - "Go(lang) (+++), Python (+++), Typescript / Javascript (+++), Ruby (+++), PHP (++), Java (+), SQL (+)"
+  - title: "Protokolle"
+    values:
+    - "GRPC (+++), OAuth (+++), OpenID Connect / OIDC (+++), HTTP (+++), Protobuf / GRPC (+++), MQTT (+++), SMTP (++), Kafka (++)"
+  - title: "Compute"
+    values:
+    - "Kubernetes (+++) with CRI-O / Docker / Kata, Fargate / ECS (+++), AWS Lambda (+++), Linux / MacOS administration in on-premise environments"
+  - title: "Systemueberwachung"
+    values:
+    - "Prometheus (++), EFK-Stack (Elasticsearch, Fluentd, Kibana) (++), AWS Cloudwatch (+++), Datadog (++), Grafana (++)"
+  - title: "IaC - Infrastructure as Code"
+    values:
+    - "Cloudformation (+++), Terraform (+++), AWS CDK (+++), Azure ARM (++), Ansible (++), Puppet (++)"
+  - title: "Cloud Provider"
+    values:
+    - "Amazon Web Services (AWS) (+++), Google Cloud Platform (++), Microsoft Azure (++)"
+  - title: "Datenbanken"
+    values:
+    - "PostgreSQL / CockroachDB (++), MySQL (++), Cassandra (+), Elasticsearch(++), Redis (++)"
+  - title: "Betriebssysteme"
+    values:
+    - "Linux (in particular Debian, RHEL, CentOS, Ubuntu, Arch and Alpine) (+++), OsX (+++) and Windows (++)"
+  - title: "Methodologien"
+    values:
+    - "Git (+++), Scrum (+++), KanBan (+++), Test-Driven-Development (TDD) (+++)"
+  - title: "Frameworks, Testsuites"
+    values:
+    - "Go test (+++), Kubebuilder (+++), React.js (+++), Next.js (+++), Ruby on Rails (+++), Jest(+++), ZeroMQ (++)"
+
+permanent_positions:
+  - start: 09/2011
+    end: 12/2015
+    client: Corscience GmbH & Co. KG
+    role: System Administrator
+    key_points:
+      - Ausbildung als Fachinformatiker/Systemintegration
+      - "ab 6/14: Freelance part-time job"
+      - "ab 03/15: Full-time Freelancer"
+links:
+  - link: https://github.com/nirnanaaa
+    title: GitHub
+history:
+  - client: Wilde-IT
+    industry: Finanz
+    role: Staff Software Developer
+    start: 10/2024
+    end: ""
+    tech: Golang, Kubernetes
+    clientLink: wilde-it.com
+    clientLogo: /clients/wilde-it.svg
+    shortSummary: Design und Entwicklung einer Mehrstufigen, Workflow basierten Data-Processing-Pipeline
+    invertedSortingWeight: 1
+    key_points:
+    - Entwicklung einer Kubernetes-nativen Dateiintegrationsplattform in Go, verteilt auf Core-Services und Remote-Agents, mit ca. 10.000 Jobs pro Minute
+    - Workflow-Engine auf Basis einer State-Machine mit Retry, Abbruchstrategien und Flow-Control zwischen Core und Agents
+    - Erweiterbare Protokoll-Adapter fuer SFTP, SMTP und lokale Dateisysteme — neue Quellen oder Ziele lassen sich ohne Aenderungen am Core anbinden
+    - gRPC-Middleware-Kette fuer Filterung, selektive Komprimierung, PDF-Konvertierung, Tokenisierung und Templating
+    - PostgreSQL-basierte Job-Queue mit Stream-basiertem S3-Dateitransfer fuer zuverlaessige Zustellung auch bei Fehlern
+    - Kubernetes CRDs und Controller fuer Workflow-Management, RBAC mit Multi-Tenancy und Enterprise-Auth ueber LDAP, OIDC und SAML
+  - client: Teleson AG
+    industry: Marketing
+    role: Dev-Ops und Platform-Engineer
+    start: 05/2024
+    end: "10/2024"
+    tech: AWS, Golang, Saltstack
+    clientLink: teleson.de
+    clientLogo: /clients/teleson.png
+    shortSummary: AWS Cloud Migration und Einfuehrung von Cloud und Sicherheitspraktiken
+    invertedSortingWeight: 1
+    key_points:
+    - Aufbau einer Go-basierten Automatisierungsinfrastruktur fuer On-Premise- und AWS-Umgebungen zur Bekaempfung haeufiger Ausfallzeiten, wodurch die Wiederherstellungszeit reduziert und volle Transparenz ueber alle deployten Services geschaffen wurde
+    - Migration manuell provisionierter Server und Infrastruktur auf Industriestandard Infrastructure as Code (CDK), wodurch die Zuverlaessigkeit der Deployments und das Vertrauen des Teams in Produktionsaenderungen gesteigert wurde
+    - Einfuehrung von CI/CD-Pipelines auf GitHub Actions zur Eliminierung manueller Deployment-Schritte, wodurch die Anzahl erforderlicher Admin-Interaktionen pro Deployment auf nahezu null reduziert wurde
+    - Einfuehrung containerisierter Architektur auf EKS als Ersatz fuer langsame EC2-Instance-Rebuilds, wodurch die Deployment-Zeit von ueber 30 Minuten auf unter 2 Minuten reduziert wurde
+  - client: Juratherm GmbH
+    tech: Kubernetes, AWS, Go, IoT
+    industry: Industrie
+    start: 05/2018
+    end: ""
+    role: System Architect und Dev-Ops
+    invertedSortingWeight: 1
+    clientLink: juratherm.com
+    clientLogo: /clients/Logo_Juratherm.svg
+    shortSummary: IoT Devices, AWS Account Management und Manufacturing Automation
+    key_points:
+      - Konzeption und Durchfuehrung einer Zero-Downtime-Migration der kritischen On-Premise-Infrastruktur auf AWS mittels CDK und CloudFormation, wodurch eine vollstaendig codifizierte und reproduzierbare Cloud-Umgebung etabliert wurde
+      - Entwicklung eines verteilten, GRPC-basierten Druckspoolers und -servers in Go zur Automatisierung des Etikettendrucks in der Fertigung, als Ersatz fuer einen fragilen manuellen Prozess
+      - Implementierung einer Microservice-Authentifizierung mittels Smartcards und Yubikeys mit OAuth/OpenID Connect in Go zur Absicherung des Zugriffs auf verteilte Services
+  - client: EnBW AG
+    industry: Energieversorger
+    role: Software Entwickler und Dev-Ops
+    start: mehrere, zuletzt 10/2022
+    end: "06/2024"
+    tech: Golang, Kubernetes, Harbor, AWS, Gitlab, Vmware vRa/vRo
+    clientLink: enbw.com
+    clientLogo: /clients/enbw.png
+    shortSummary: Kubernetes On-Premise Infrastructure and OS patch automation tooling
+    invertedSortingWeight: 2
+    key_points:
+      - Entwurf und Entwicklung eines verteilten, GRPC-basierten Patchmanagement-Systems in Go zur automatischen Aktualisierung aller Linux-Server in den Backend-Netzwerken des Unternehmens, als Ersatz fuer einen zuvor manuellen und fehleranfaelligen Prozess
+      - Entwicklung einer headless Saltstack-basierten Befehlsausfuehrungs-Engine in Go, die sichere und auditierbare Remote-Befehlsausfuehrung auf Hunderten von Servern ermoeglicht
+      - Reduzierung der Bare-Metal-Kubernetes-Bereitstellungszeit von 30 Minuten (kubespray) auf unter 2 Minuten durch Entwicklung massgeschneiderter Go-Tools, die in einem bestehenden Management-Cluster deployt werden
+      - Konfiguration von Palo Alto Prisma Laufzeitsicherheitssoftware zur Erkennung von Angriffsszenarien und Intrusion waehrend der Laufzeit von Kubernetes-Workloads, wodurch die Sicherheitslage fuer containerisierte Umgebungen gestaerkt wurde
+  - client: Scout24 AG
+    industry: Online
+    role: Software Entwickler and Dev-Ops
+    start: 06/2019 - 11/2019, 07/2021
+    end: "08/2022"
+    tech: Kubernetes, Golang, AWS, CDK
+    clientLink: immobilienscout24.de
+    clientLogo: /clients/is24.webp
+    shortSummary: Company-wide hosting platform for microservices and AWS account migration
+    invertedSortingWeight: 1
+    key_points:
+      - Entwicklung von Kubernetes Custom Resources und Controllern in Go mit standardisierter Schnittstelle fuer Metriken, Alerts und Autoscaling fuer interne Entwickler, wodurch die durchschnittliche Deployment-Zeit von 15 auf 3 Minuten und nicht behebbare Deployment-Fehler von 1% auf unter 0,1% reduziert wurden
+      - Aufbau automatischer Backup- und Restore-Pipelines fuer 5 Kubernetes-Cluster mit Velero und einer eigenen UI, die clusteruebergreifende Service-Migration in unter 1 Minute ermoeglicht — deutlich innerhalb des 1-Stunden-RTO
+      - Durchfuehrung eines Zero-Downtime-Carve-Outs von 150 der damals 600 Services — einschließlich relationaler Datenbanken, AWS-Account-Ressourcen und Kubernetes-Workloads — in neue Organisationsstrukturen ohne Serviceunterbrechung
+  - client: Klingel K - Mail Order GmbH & Co. KG
+    industry: Online Retailer
+    role: Dev-Ops
+    start: 08/2023
+    end: 02/2024
+    tech: Ansible, Kubernetes, Ubuntu, K3s, PostgreSQL
+    clientLink: www.klingel-gruppe.de
+    clientLogo: /clients/klingel.svg
+    shortSummary: Interim System Management and establishing a new Observability pipeline in an on-premise Environment.
+    invertedSortingWeight: 2
+    key_points:
+      - Uebernahme der Interim-Systemadministration der Retouren-Abteilung mittels Ansible, Ubuntu und Kubernetes, um die operationelle Kontinuitaet waehrend einer Personalluecke sicherzustellen
+      - Migration von Nexus, EFK/ELK und Monitoring-Loesungen zwischen hauseigenen Rechenzentren mit minimaler Unterbrechung, wodurch eine modernisierte Observability-Pipeline etabliert wurde
+      - Implementierung automatisierter Backup-Strategien fuer die in-house betriebenen PostgreSQL-Datenbanken, wodurch eine kritische Luecke im Datenschutz geschlossen wurde
+  - client: ADB Safegate
+    industry: Manufacturing
+    role: Site Reliability Engineer
+    start: 08/2022
+    end: "01/2023"
+    tech: Kubernetes, Golang, Rancher, On-Premise
+    invertedSortingWeight: 9
+    clientLink: adbsafegate.com
+    clientLogo: /clients/adbsg.png
+    shortSummary: Kubernetes-based Application Edge deployments and infrastructure
+    key_points:
+    - Entwurf und federfuehrende Entwicklung einer standardisierten Helmfile-basierten Deployment-Pipeline, die reproduzierbare und Offline-faehige Kubernetes-Cluster-Bereitstellung ueber heterogene Edge-Umgebungen hinweg ermoeglicht
+    - Schulung und Mentoring des internen Entwicklungsteams in Kubernetes-Betrieb und fehlertoleranten Architekturmustern, wodurch das Team in die Lage versetzt wurde, Produktions-Workloads eigenstaendig zu verwalten
+
+  - client: IONOS SE
+    industry: Online
+    role: Dev-Ops / Platform Engineer
+    start: 12/2021
+    end: "03/2022"
+    tech: Kubernetes, Golang
+    clientLink: ionos.de
+    clientLogo: /clients/ionos.png
+    shortSummary: In-Hose on-premise Kubernetes Cloud Offering and automation tooling
+    key_points:
+      - Mitarbeit am Aufbau und der Pflege einer Kubernetes-PaaS-Loesung fuer ueber 10.000 Kunden, wobei alle Go-basierten Tools durch automatisierte CI-Pipelines entwickelt und validiert wurden
+  - client: AMAN Media GmbH
+    start: 08/2020
+    end: "09/2021"
+    industry: Online
+    role: AWS Architect / SRE
+    tech: AWS, Python, Lambda
+    clientLink: aman.de
+    clientLogo: /clients/aman.png
+    shortSummary: Cloud Architecture and implementation of scalable webshops
+    key_points:
+      - Entwurf einer skalierbaren AWS-Hosting-Architektur fuer eine PHP-Webanwendung mit asynchroner Hintergrundverarbeitung, die der Plattform ermoeglicht, wachsenden Traffic ohne manuelle Eingriffe zu bewaeltigen
+      - Einfuehrung von Infrastructure as Code und automatisierten Jenkins-Deployment-Pipelines, wodurch Self-Service-Deployments fuer Entwickler ermoeglicht und manuelle Provisionierungsschritte eliminiert wurden
+      - Etablierung von Opsgenie-basierter Rufbereitschaft mit Anbindung an das Produktivsystem, wodurch die Reaktionszeit bei Incidents durch strukturiertes Alert-Routing und Triage reduziert wurde
+  - client: Baxter International
+    role: Dev-Ops / SRE
+    industry: Gesundheitswesen
+    start: 07/2020
+    end: ""
+    tech: Azure, Kubernetes, Golang, React.JS, GitHub Enterprise, GHEC
+    invertedSortingWeight: 4
+    clientLink: baxter.com
+    clientLogo: /clients/baxter.png
+    shortSummary: Role Based Access Control Policies and Kubernetes Infrastructure
+    key_points:
+      - Etablierung des zuverlaessigen Betriebs von 3 AKS-Kubernetes-Clustern fuer 400 Entwickler beim Umstieg von On-Premise-Deployments, einschließlich Aufbau standardisierter Workflows und Runbooks fuer die neue Plattform
+      - Containerisierung von 25 Java-Anwendungen mit automatisierten GitHub-Workflows und Helm-basiertem Lifecycle-Management, wodurch die Vorlauf- und Bereitstellungszeit fuer Softwareaenderungen von mehreren Stunden auf unter 5 Minuten reduziert wurde
+      - Migration des Quellcode-Verwaltungssystems (230 Repositories, 400 Nutzer) von Bitbucket auf GitHub Enterprise mit Implementierung von SAML, 2-Faktor-Authentifizierung und SCIM-basierter Benutzerbereitstellung zur Staerkung der Sicherheit
+      - Entwicklung von Self-Service-Tools in Go und TypeScript, die Engineering Managern die Verwaltung ihrer Teammitglieder und rollenbasierte Zugriffskontrolle in Azure AD ermoeglichen und manuelle IT-Tickets fuer Zugriffsaenderungen eliminieren
+
+  - client: AutoScout24 GmbH
+    start: 11/2019
+    end: 04/2020
+    clientLink: autoscout24.de
+    clientLogo: /clients/as24.jpg
+    shortSummary: Offer management for car dealerships
+    key_points:
+      - Entwicklung einer React.JS/TypeScript-basierten Web-Anwendung fuer eine Online-Autohandelsplattform, die Autohaendlern die Verwaltung ihrer Inserate und die Echtzeit-Ueberwachung von Performance-Kennzahlen ermoeglicht
+    tech: React.JS, AWS, Golang
+    industry: Online
+    role: Software Developer
+  - client: 100 days Software Projects GmbH
+    industry: Online
+    start: 01/2018
+    end: 06/2019
+    role: Software Entwickler und SRE
+    tech: React, Kubernetes, Golang, Codeship, Google Cloud Platform, Kafka, Node.JS, Jira, Linux, Nginx, MySQL, PostgreSQL
+    invertedSortingWeight: 5
+    clientLink: www.100days.de
+    clientLogo: /clients/logo_kleinesR.svg
+    shortSummary: On-Premise Kubernetes Setup, Cloud Collaboration Suite and Online Password Manager
+    key_points:
+      - Entwicklung einer Office-Suite-aehnlichen Kollaborationsanwendung (Excel, Word) fuer KMUs in React.JS und TypeScript als browserbasierte Alternative zu Desktop-Produktivitaetstools
+      - Entwicklung eines Google-Drive-aehnlichen Cloud-Speicherdienstes mit React.JS-Frontend und Go-Backend fuer Echtzeit-Dateiverwaltung und -freigabe
+      - Entwurf und Implementierung eines Thumbnail-Generators in Go mit S3-basiertem Speicher und asynchronen Fan-Out-Worker-Pipelines fuer Hochdurchsatz-Bildverarbeitung
+      - Konzept und Architektur-Design eines webbasierten Passwortmanagers in React.JS, Go und WebAssembly mit clientseitiger Verschluesselung fuer sichere Zugangsdatenspeicherung
+      - Aufbau der On-Premise Kubernetes-Hosting- und CI-Infrastruktur mit Ansible-basierter Automatisierung als selbstverwaltete Deployment-Plattform fuer das Team
+  - client: seven point.media GmbH & Co. KG
+    industry: Gesundheitswesen
+    start: 03/2016
+    end: 12/2019
+    role: Software Entwickler und SRE
+    tech: React, PHP, Kubernetes, AWS, GitHub
+    clientLink: www.7pointmedia.com
+    clientLogo: /clients/sevenpoint.png
+    shortSummary: Membership and Device Management for EMS-based training
+    key_points:
+      - Mitentwicklung einer Fitnessstudio-Verwaltungssoftware fuer 600 Kunden in 10 Laendern, mit PHP-Backend und React.JS-Frontend fuer Mitglieder- und Geraeteverwaltung
+      - Aufbau und Betrieb einer AWS/EKS-Hosting-Plattform, die Entwicklern Self-Service-Deployments ihrer PHP-Anwendungen in unter 5 Minuten ermoeglicht
+  - client: ERAMON GmbH
+    industry: Industriebedarf
+    role: Consultant und React Coach
+    start: 03/2016
+    end: 06/2016
+    tech: React, Webpack, Node.JS, Sass
+    invertedSortingWeight: -1
+    key_points:
+      - Coaching der internen Entwickler in React.JS-Einfuehrung und modernen Frontend-Best-Practices, wodurch das Team befaehigt wurde, React-Komponenten eigenstaendig zu entwickeln und zu pflegen
+      - Integration von React-Komponenten in die bestehende Legacy-Softwareplattform zur Modernisierung der Benutzeroberflaeche ohne vollstaendigen Rewrite
+  - client: VATC Technologies Inc.
+    industry: Ruestungsindustrie
+    start: 03/2015
+    end: 06/2016
+    role: Software Architect und Entwickler
+    clientLink: vatcinc.com
+    clientLogo: /clients/vatc.jpeg
+    shortSummary: Modern-Age Exercise Planning and Monitoring
+    key_points:
+      - Entwurf und Entwicklung einer Plattform fuer sichere Speicherung und Analyse biometrischer Daten (Fingerabdruecke, Iris, PII) mit Ruby on Rails Backend und React.JS Frontend auf AWS unter Einhaltung strenger Sicherheitsanforderungen
+      - Architektur einer Social-Media-Aggregationsplattform mittels Web-Scrapern, Twitter Firehose und Kafka-Pipelines in Cassandra, die Uebungsleitern das Einspeisen von Trainingsdaten und Analysten das Ueben von Identifikations-Workflows ermoeglicht
+    tech: React, Node.JS, Apache, Ruby on Rails, PHP, Docker, Linux, AWS, Elasticsearch, Cassandra, ArcGIS
+  - client: Corscience GmbH & Co. KG
+    industry: Gesundheitswesen
+    start: 01/2015
+    role: SRE
+    end: 12/2016
+    tech: Debian Linux, Ansible, Docker, VMware, Ruby on Rails, React
+    invertedSortingWeight: -1
+    key_points:
+      - Administration und Automatisierung der internen Debian-basierten Serverlandschaft mit Puppet und Ansible, wodurch der manuelle Wartungsaufwand reduziert und die Konsistenz ueber alle Umgebungen verbessert wurde
+      - Entwicklung von In-house-Anwendungen mit Ruby on Rails und Docker zur Optimierung interner Geschaeftsprozesse
+      - Konsolidierung von 20 Webservices auf eine Docker-basierte Hosting-Plattform, wodurch der Infrastruktur-Overhead reduziert und Deployment-Workflows vereinfacht wurden
+  - client: XPANDMMI
+    industry: Online
+    start: 01/2015
+    role: Software Developer
+    end: 03/2015
+    invertedSortingWeight: -1
+    key_points:
+      - Entwicklung verschiedener Plattformmodule fuer ein CMS-System in PHP und Ruby on Rails zur Erweiterung der Plattformfunktionalitaet fuer kundenspezifische Anforderungen
+    tech: PHP, Apache, MySQL, Ruby on Rails
+  - client: Jacor Online Marketing
+    industry: Online
+    role: Software Developer
+    start: 06/2014
+    end: 12/2014
+    tech: PHP, React
+    invertedSortingWeight: -1
+    key_points:
+      - Entwurf und Entwicklung einer Bildbewertungs- und Rating-Anwendung in PHP und React, die Nutzern das Hochladen, Pruefen und Bewerten visueller Inhalte ermoeglicht

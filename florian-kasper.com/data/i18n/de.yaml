@@ -1,0 +1,66 @@
+lang: de
+locale: de_DE
+altLang: en
+altLangName: English
+prefix: /de
+altPrefix: ""
+
+nav:
+  home: Startseite
+  about: "Über mich"
+  clients: Kunden
+  uses: Tools
+  menu: "Menü"
+  navigation: Navigation
+
+footer:
+  tagline: "Entwicklung eleganter, nutzerfreundlicher und entwicklerorientierter Computing-Infrastruktur."
+  platforms: Plattformen
+  company: Unternehmen
+  legal: Rechtliches
+  about: "Über mich"
+  clients: Kunden
+  uses: Tools
+  privacy: Datenschutz
+  copyright: "Alle Rechte vorbehalten."
+
+home:
+  hero: "Software- &amp; DevOps-Ingenieur."
+  cvHeading: Lebenslauf
+  cvDescription: "Go, Kubernetes, AWS, Platform Engineering, CI/CD, verteilte Systeme, gRPC, Terraform, React. Verfügbar auf Englisch und Deutsch."
+  download: Download
+  sideProjectsHeading: Nebenprojekte
+  sideProjectsDescription: "Was ich baue, wenn ich keine Software schreibe — Holzarbeiten, eigene Platinen und Firmware-Hacking."
+  getInTouch: Kontakt
+  getInTouchDescription: "Interesse an einer Zusammenarbeit? Ich bin für freiberufliche Projekte verfügbar."
+  collaborate: Zusammenarbeit
+
+about:
+  heading: "Über mich."
+  contactLine: "Wenn Sie Hilfe beim Vereinfachen Ihrer Infrastruktur benötigen, kontaktieren Sie mich unter"
+
+clients:
+  heading: "Ausgewählte Kundenprojekte."
+
+projects:
+  heading: "Nebenprojekte."
+  description: "Was ich baue, wenn ich keine Software schreibe — Holzarbeiten, eigene Platinen und Firmware-Hacking."
+  empty: "Noch nichts hier — schauen Sie bald wieder vorbei."
+
+uses:
+  heading: "Tools und Hardware, die ich täglich nutze."
+  description: "Die Hardware, Software und Entwicklungstools, auf die ich beim Bau verteilter Systeme und Plattform-Infrastruktur setze."
+  workstation: Arbeitsplatz
+  editorTerminal: "Editor &amp; Terminal"
+  languagesFrameworks: "Sprachen &amp; Frameworks"
+  infrastructure: Infrastruktur
+  devTooling: Entwicklungstools
+
+resume:
+  downloadCv: Lebenslauf herunterladen
+
+notFound:
+  title: "Seite nicht gefunden — Florian Kasper"
+  heading: "Seite nicht gefunden"
+  description: "Die gesuchte Seite existiert leider nicht."
+  backHome: "&larr; Zurück zur Startseite"

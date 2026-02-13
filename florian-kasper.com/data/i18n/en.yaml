@@ -1,0 +1,66 @@
+lang: en
+locale: en_US
+altLang: de
+altLangName: Deutsch
+prefix: ""
+altPrefix: /de
+
+nav:
+  home: Home
+  about: About
+  clients: Clients
+  uses: Uses
+  menu: Menu
+  navigation: Navigation
+
+footer:
+  tagline: "Building elegant, usable and developer-focused computing infrastructure experiences."
+  platforms: Platforms
+  company: Company
+  legal: Legal
+  about: About
+  clients: Clients
+  uses: Uses
+  privacy: Privacy
+  copyright: "All rights reserved."
+
+home:
+  hero: "Software &amp; DevOps Engineer."
+  cvHeading: CV
+  cvDescription: "Go, Kubernetes, AWS, Platform Engineering, CI/CD, Distributed Systems, gRPC, Terraform, React. Available in English and German."
+  download: Download
+  sideProjectsHeading: Side projects
+  sideProjectsDescription: "Things I build when I'm not writing software — woodworking, custom PCBs and firmware hacking."
+  getInTouch: Get in touch
+  getInTouchDescription: "Interested in working together? I'm available for freelance projects."
+  collaborate: Collaborate
+
+about:
+  heading: "About me."
+  contactLine: "If you need any help decluttering your own infrastructure, please contact me at"
+
+clients:
+  heading: "Selected client projects."
+
+projects:
+  heading: "Side projects."
+  description: "Things I build when I'm not writing software — woodworking, custom PCBs and firmware hacking."
+  empty: "Nothing here yet — check back soon."
+
+uses:
+  heading: "Tools and hardware I use every day."
+  description: "The hardware, software and development tools I rely on for building distributed systems and platform infrastructure."
+  workstation: Workstation
+  editorTerminal: "Editor &amp; Terminal"
+  languagesFrameworks: "Languages &amp; Frameworks"
+  infrastructure: Infrastructure
+  devTooling: Dev tooling
+
+resume:
+  downloadCv: Download CV
+
+notFound:
+  title: "Page not found — Florian Kasper"
+  heading: "Page not found"
+  description: "Sorry, the page you're looking for doesn't exist."
+  backHome: "&larr; Back to home"
