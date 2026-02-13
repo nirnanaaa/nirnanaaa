@@ -1,63 +1,23 @@
-FROM node:18-alpine AS base
+FROM node:22-alpine AS frontend
+WORKDIR /app/frontend
+COPY florian-kasper.com/frontend/package.json florian-kasper.com/frontend/package-lock.json ./
+RUN npm ci
+COPY florian-kasper.com/frontend/ ./
+COPY florian-kasper.com/data/ ../data/
+RUN LOCALE=en npx vite build && LOCALE=de npx vite build && node generate-sitemap.js
 
-# Install dependencies only when needed
-FROM base AS deps
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
-RUN apk add --no-cache libc6-compat
+FROM golang:1.24-alpine AS builder
 WORKDIR /app
+COPY florian-kasper.com/go.mod ./
+COPY florian-kasper.com/ .
+COPY --from=frontend /app/cmd/server/dist ./cmd/server/dist
+COPY cv_en.pdf ./cmd/server/dist/cv/CV.pdf
+COPY cv_de.pdf ./cmd/server/dist/cv/CV_de.pdf
+COPY cv_en.docx ./cmd/server/dist/cv/CV.docx
+COPY cv_de.docx ./cmd/server/dist/cv/CV_de.docx
+RUN CGO_ENABLED=0 go build -o /server ./cmd/server
 
-# Install dependencies based on the preferred package manager
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
-RUN \
-  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-  elif [ -f package-lock.json ]; then npm ci; \
-  elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile; \
-  else echo "Lockfile not found." && exit 1; \
-  fi
-
-
-# Rebuild the source code only when needed
-FROM base AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-
-# Next.js collects completely anonymous telemetry data about general usage.
-# Learn more here: https://nextjs.org/telemetry
-# Uncomment the following line in case you want to disable telemetry during the build.
-ENV NEXT_TELEMETRY_DISABLED 1
-
-RUN yarn build
-
-# If using npm comment out above and use below instead
-# RUN npm run build
-
-# Production image, copy all the files and run next
-FROM base AS runner
-WORKDIR /app
-
-ENV NODE_ENV production
-# Uncomment the following line in case you want to disable telemetry during runtime.
-ENV NEXT_TELEMETRY_DISABLED 1
-
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-COPY --from=builder /app/public ./public
-COPY cv_en.pdf ./public/CV.pdf
-COPY cv_de.pdf ./public/CV_de.pdf
-
-# Automatically leverage output traces to reduce image size
-# https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-USER nextjs
-
-EXPOSE 3000
-
-ENV PORT 3000
-# set hostname to localhost
-ENV HOSTNAME "0.0.0.0"
-
-CMD ["node", "server.js"]
+FROM gcr.io/distroless/static-debian12
+COPY --from=builder /server /server
+EXPOSE 8080
+ENTRYPOINT ["/server"]

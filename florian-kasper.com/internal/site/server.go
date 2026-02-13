@@ -33,8 +33,7 @@ func New(distFS embed.FS) http.Handler {
 	for _, p := range pages {
 		page := p
 		mux.HandleFunc("GET "+page, func(w http.ResponseWriter, r *http.Request) {
-			r.URL.Path = page + "/index.html"
-			fileServer.ServeHTTP(w, r)
+			serveFile(w, dist, page[1:]+"/index.html")
 		})
 	}
 
@@ -42,8 +41,7 @@ func New(distFS embed.FS) http.Handler {
 	for _, p := range pages {
 		page := p
 		mux.HandleFunc("GET /de"+page, func(w http.ResponseWriter, r *http.Request) {
-			r.URL.Path = "/de" + page + "/index.html"
-			fileServer.ServeHTTP(w, r)
+			serveFile(w, dist, "de"+page+"/index.html")
 		})
 	}
 
@@ -58,8 +56,7 @@ func New(distFS embed.FS) http.Handler {
 			fileServer.ServeHTTP(w, r)
 			return
 		}
-		r.URL.Path = "/de/index.html"
-		fileServer.ServeHTTP(w, r)
+		serveFile(w, dist, "de/index.html")
 	})
 
 	// DE trailing slash redirects (except /de/ itself)
@@ -93,10 +90,20 @@ func New(distFS embed.FS) http.Handler {
 			http.Redirect(w, r, "/de/", http.StatusFound)
 			return
 		}
-		fileServer.ServeHTTP(w, r)
+		serveFile(w, dist, "index.html")
 	})
 
 	return withHeaders(withGzip(mux))
+}
+
+func serveFile(w http.ResponseWriter, fsys fs.FS, name string) {
+	data, err := fs.ReadFile(fsys, name)
+	if err != nil {
+		http.Error(w, "not found", http.StatusNotFound)
+		return
+	}
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Write(data)
 }
 
 func redirectNoTrailingSlash(w http.ResponseWriter, r *http.Request) {

@@ -30,7 +30,26 @@ tasks:
 
   docker:
     desc: Build Docker image
-    cmd: docker build -t florian-kasper-com .
+    cmd: docker build -t florian-kasper-com -f Dockerfile ..
+
+  docker:run:
+    desc: Run Docker container locally
+    deps: [docker]
+    cmd: docker rm -f florian-kasper-test 2>/dev/null; docker run -d --name florian-kasper-test -p {{.PORT | default "8080"}}:8080 florian-kasper-com
+
+  docker:stop:
+    desc: Stop local Docker container
+    cmd: docker rm -f florian-kasper-test
+
+  docker:verify:
+    desc: Build, run and verify Docker container
+    deps: [docker:run]
+    cmds:
+      - sleep 1
+      - task: verify
+        vars:
+          PORT: '{{.PORT | default "8080"}}'
+      - docker rm -f florian-kasper-test
 
   serve:
     desc: Run Go server locally
@@ -48,35 +67,35 @@ tasks:
     desc: Verify server responses (run with server already up)
     cmds:
       - echo "--- EN HTML pages ---"
-      - curl -sf http://localhost:${PORT:-8080}/ | head -5
-      - curl -sf http://localhost:${PORT:-8080}/about | head -5
-      - curl -sf http://localhost:${PORT:-8080}/clients | head -5
-      - curl -sf http://localhost:${PORT:-8080}/uses | head -5
-      - curl -sf http://localhost:${PORT:-8080}/privacy | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/ | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/about | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/clients | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/uses | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/privacy | head -5
       - echo "--- DE HTML pages ---"
-      - curl -sf http://localhost:${PORT:-8080}/de/ | head -5
-      - curl -sf http://localhost:${PORT:-8080}/de/about | head -5
-      - curl -sf http://localhost:${PORT:-8080}/de/clients | head -5
-      - curl -sf http://localhost:${PORT:-8080}/de/uses | head -5
-      - curl -sf http://localhost:${PORT:-8080}/de/privacy | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/de/ | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/de/about | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/de/clients | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/de/uses | head -5
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/de/privacy | head -5
       - echo "--- SEO files ---"
-      - curl -sf http://localhost:${PORT:-8080}/robots.txt
-      - curl -sf http://localhost:${PORT:-8080}/sitemap.xml | head -20
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/robots.txt
+      - curl -sf http://localhost:{{.PORT | default "8080"}}/sitemap.xml | head -20
       - echo "--- Redirects ---"
-      - curl -sI http://localhost:${PORT:-8080}/about/ | head -3
-      - curl -sI http://localhost:${PORT:-8080}/de/about/ | head -3
-      - curl -sI http://localhost:${PORT:-8080}/CV.pdf | head -3
+      - curl -sI http://localhost:{{.PORT | default "8080"}}/about/ | head -3
+      - curl -sI http://localhost:{{.PORT | default "8080"}}/de/about/ | head -3
+      - curl -sI http://localhost:{{.PORT | default "8080"}}/CV.pdf | head -3
       - echo "--- Accept-Language ---"
-      - 'curl -sI -H "Accept-Language: de" http://localhost:${PORT:-8080}/ | head -3'
-      - 'curl -sI -H "Accept-Language: en" http://localhost:${PORT:-8080}/ | head -3'
+      - 'curl -sI -H "Accept-Language: de" http://localhost:{{.PORT | default "8080"}}/ | head -3'
+      - 'curl -sI -H "Accept-Language: en" http://localhost:{{.PORT | default "8080"}}/ | head -3'
       - echo "--- Headers ---"
-      - curl -sI http://localhost:${PORT:-8080}/ | grep -iE 'cache-control|x-content-type|x-frame|referrer|vary'
+      - curl -sI http://localhost:{{.PORT | default "8080"}}/ | grep -iE 'cache-control|x-content-type|x-frame|referrer|vary'
       - echo "--- Gzip ---"
-      - 'curl -sI -H "Accept-Encoding: gzip" http://localhost:${PORT:-8080}/ | grep -i content-encoding'
+      - 'curl -sI -H "Accept-Encoding: gzip" http://localhost:{{.PORT | default "8080"}}/ | grep -i content-encoding'
       - echo "--- 404 ---"
-      - 'curl -so /dev/null -w "%{http_code}" http://localhost:${PORT:-8080}/nonexistent'
+      - 'curl -so /dev/null -w "%{http_code}" http://localhost:{{.PORT | default "8080"}}/nonexistent'
       - echo ""
-      - 'curl -so /dev/null -w "%{http_code}" http://localhost:${PORT:-8080}/de/nonexistent'
+      - 'curl -so /dev/null -w "%{http_code}" http://localhost:{{.PORT | default "8080"}}/de/nonexistent'
       - echo ""
       - echo "--- All checks passed ---"
 

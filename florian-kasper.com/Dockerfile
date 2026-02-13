@@ -1,15 +1,15 @@
 FROM node:22-alpine AS frontend
 WORKDIR /app/frontend
-COPY frontend/package.json frontend/package-lock.json ./
+COPY florian-kasper.com/frontend/package.json florian-kasper.com/frontend/package-lock.json ./
 RUN npm ci
-COPY frontend/ ./
-COPY data/ ../data/
+COPY florian-kasper.com/frontend/ ./
+COPY florian-kasper.com/data/ ../data/
 RUN LOCALE=en npx vite build && LOCALE=de npx vite build && node generate-sitemap.js
 
 FROM golang:1.24-alpine AS builder
 WORKDIR /app
-COPY go.mod ./
-COPY . .
+COPY florian-kasper.com/go.mod ./
+COPY florian-kasper.com/ .
 COPY --from=frontend /app/cmd/server/dist ./cmd/server/dist
 COPY cv_en.pdf ./cmd/server/dist/cv/CV.pdf
 COPY cv_de.pdf ./cmd/server/dist/cv/CV_de.pdf
