@@ -82,6 +82,20 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
+  - client: AOE Solutions GmbH
+    industry: Software
+    role: Technical Product Lead
+    start: 06/2026
+    end: ""
+    tech: Go, Kubernetes, Open Source, Product Management
+    clientLink: www.aoe.com
+    clientLogo: /clients/konfidence.svg
+    shortSummary: Project lead and strategic product direction for Konfidence with a team of 15 people
+    invertedSortingWeight: 1
+    key_points:
+    - Took Konfidence from idea to public open-source release within 6 months of joining the project
+    - Led a team of 15 people as technical team lead
+    - Delivered a release path that promotes the same application build from development to production with zero changes to the application itself
   - client: Wilde-IT
     industry: Financial
     role: Staff Software Developer
@@ -265,6 +279,7 @@ history:
       - Co-developed fitness center management software used by 600 clients across 10 countries, building the PHP backend and React.JS frontend for membership and device management
       - Built and maintained an AWS/EKS platform product enabling developers to build and deploy PHP applications in under 5 minutes through self-service pipelines
   - client: ERAMON GmbH
+    clientLogo: /clients/eramon.png
     industry: Industry Supply
     role: Consultant and React Coach
     start: 03/2016
@@ -287,6 +302,7 @@ history:
       - Architected a social network intelligence aggregation platform using web scrapers, Twitter Firehose, and Kafka pipelines feeding into Cassandra, enabling exercise operators to inject training scenarios and analysts to practice identification workflows
     tech: React, Node.JS, Apache, Ruby on Rails, PHP, Docker, Linux, AWS, Elasticsearch, Cassandra, ArcGIS
   - client: Corscience GmbH & Co. KG
+    clientLogo: /clients/corscience.svg
     industry: Healthcare
     start: 01/2015
     role: SRE
@@ -307,6 +323,7 @@ history:
       - Developed various platform modules for a CMS system in PHP and Ruby on Rails, extending the platform's functionality for client-specific requirements
     tech: PHP, Apache, MySQL, Ruby on Rails
   - client: Jacor Online Marketing
+    clientLogo: /clients/jacor.png
     industry: Online
     role: Software Developer
     start: 06/2014

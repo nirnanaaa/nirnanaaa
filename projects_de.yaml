@@ -82,6 +82,20 @@ links:
   - link: https://github.com/nirnanaaa
     title: GitHub
 history:
+  - client: AOE Solutions GmbH
+    industry: Software
+    role: Technical Product Lead
+    start: 06/2026
+    end: ""
+    tech: Go, Kubernetes, Open Source, Produktmanagement
+    clientLink: www.aoe.com
+    clientLogo: /clients/konfidence.svg
+    shortSummary: Projektleitung und strategische Produktausrichtung für Project Konfidence mit einem Team von 15 Personen
+    invertedSortingWeight: 1
+    key_points:
+    - Konfidence innerhalb von 6 Monaten nach Projekteinstieg von der Idee zur öffentlichen Open-Source-Veröffentlichung gebracht
+    - Technische Teamleitung für ein Team von 15 Personen
+    - Release-Pfad umgesetzt, der denselben Anwendungs-Build von der Entwicklungsumgebung bis in die Produktion befördert, ohne jede Änderung an der Anwendung selbst
   - client: Wilde-IT
     industry: Finanz
     role: Staff Software Developer
@@ -221,7 +235,7 @@ history:
     shortSummary: Role Based Access Control Policies and Kubernetes Infrastructure
     key_points:
       - Etablierung des zuverlaessigen Betriebs von 3 AKS-Kubernetes-Clustern fuer 400 Entwickler beim Umstieg von On-Premise-Deployments, einschließlich Aufbau standardisierter Workflows und Runbooks fuer die neue Plattform
-      - Containerisierung von 25 Java-Anwendungen mit automatisierten GitHub-Workflows und Helm-basiertem Lifecycle-Management, wodurch die Vorlauf- und Bereitstellungszeit fuer Softwareaenderungen von mehreren Stunden auf unter 5 Minuten reduziert wurde
+      - Containerisierung von 25 Java-Anwendungen mit automatisierten GitHub-Workflows und Helm-basiertem Lifecycle-Management, wodurch die Vorlauf- und Bereitstellungszeit fuer Softwareänderungen von mehreren Stunden auf unter 5 Minuten reduziert wurde
       - Migration des Quellcode-Verwaltungssystems (230 Repositories, 400 Nutzer) von Bitbucket auf GitHub Enterprise mit Implementierung von SAML, 2-Faktor-Authentifizierung und SCIM-basierter Benutzerbereitstellung zur Staerkung der Sicherheit
       - Entwicklung von Self-Service-Tools in Go und TypeScript, die Engineering Managern die Verwaltung ihrer Teammitglieder und rollenbasierte Zugriffskontrolle in Azure AD ermoeglichen und manuelle IT-Tickets fuer Zugriffsaenderungen eliminieren
 
@@ -265,6 +279,7 @@ history:
       - Mitentwicklung einer Fitnessstudio-Verwaltungssoftware fuer 600 Kunden in 10 Laendern, mit PHP-Backend und React.JS-Frontend fuer Mitglieder- und Geraeteverwaltung
       - Aufbau und Betrieb einer AWS/EKS-Hosting-Plattform, die Entwicklern Self-Service-Deployments ihrer PHP-Anwendungen in unter 5 Minuten ermoeglicht
   - client: ERAMON GmbH
+    clientLogo: /clients/eramon.png
     industry: Industriebedarf
     role: Consultant und React Coach
     start: 03/2016
@@ -287,6 +302,7 @@ history:
       - Architektur einer Social-Media-Aggregationsplattform mittels Web-Scrapern, Twitter Firehose und Kafka-Pipelines in Cassandra, die Uebungsleitern das Einspeisen von Trainingsdaten und Analysten das Ueben von Identifikations-Workflows ermoeglicht
     tech: React, Node.JS, Apache, Ruby on Rails, PHP, Docker, Linux, AWS, Elasticsearch, Cassandra, ArcGIS
   - client: Corscience GmbH & Co. KG
+    clientLogo: /clients/corscience.svg
     industry: Gesundheitswesen
     start: 01/2015
     role: SRE
@@ -307,6 +323,7 @@ history:
       - Entwicklung verschiedener Plattformmodule fuer ein CMS-System in PHP und Ruby on Rails zur Erweiterung der Plattformfunktionalitaet fuer kundenspezifische Anforderungen
     tech: PHP, Apache, MySQL, Ruby on Rails
   - client: Jacor Online Marketing
+    clientLogo: /clients/jacor.png
     industry: Online
     role: Software Developer
     start: 06/2014
