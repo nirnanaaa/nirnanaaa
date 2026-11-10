@@ -18,9 +18,7 @@
 ### About
 
 Freelance software engineer since 2015. I build internal platforms, Kubernetes
-controllers, CI/CD pipelines and cloud migrations — usually where hundreds of
-developers ship thousands of services. I keep systems simple, reliable and easy
-to operate.
+controllers, CI/CD pipelines and cloud migrations. I love simple, reliable and easy to operate systems.
 
 ### Stack
 
