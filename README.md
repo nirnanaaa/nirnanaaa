@@ -10,6 +10,7 @@
 [![Email](https://img.shields.io/badge/info@florian--kasper.com-0f172a?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:info@florian-kasper.com)
 [![CV EN](https://img.shields.io/badge/CV-English-2563eb?style=for-the-badge&logo=readdotcv&logoColor=white)](./cv_en.pdf)
 [![CV DE](https://img.shields.io/badge/CV-Deutsch-2563eb?style=for-the-badge&logo=readdotcv&logoColor=white)](./cv_de.pdf)
+[![freelancermap](https://img.shields.io/badge/freelancermap-Profil-0f172a?style=for-the-badge)](https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/119789-profil-florian-kasper-software-development-professional-with-expertise-in-site-reliability-engineering.html)
 
 </div>
 
