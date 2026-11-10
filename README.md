@@ -24,7 +24,7 @@ controllers, CI/CD pipelines and cloud migrations. I love simple, reliable and e
 ### Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=go,py,ts,ruby,php,react&theme=dark" alt="Languages"><br>
-  <img src="https://skillicons.dev/icons?i=kubernetes,docker,aws,gcp,azure,linux&theme=dark" alt="Platforms"><br>
+  <img src="https://skillicons.dev/icons?i=go,py,ts,ruby&theme=dark" alt="Languages"><br>
+  <img src="https://skillicons.dev/icons?i=kubernetes,docker,aws,gcp,linux&theme=dark" alt="Platforms"><br>
   <img src="https://skillicons.dev/icons?i=terraform,ansible,kafka,prometheus,grafana&theme=dark" alt="Tooling">
 </p>
