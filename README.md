@@ -27,9 +27,3 @@ controllers, CI/CD pipelines and cloud migrations. I love simple, reliable and e
   <img src="https://skillicons.dev/icons?i=kubernetes,docker,aws,gcp,azure,linux&theme=dark" alt="Platforms"><br>
   <img src="https://skillicons.dev/icons?i=terraform,ansible,kafka,prometheus,grafana&theme=dark" alt="Tooling">
 </p>
-
-### Activity
-
-<p align="center">
-  <img src="./github-metrics.svg" alt="GitHub metrics" width="480">
-</p>
